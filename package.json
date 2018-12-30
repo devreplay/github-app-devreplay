@@ -1,0 +1,55 @@
+{
+  "name": "review-uniquer",
+  "version": "1.0.0",
+  "description": "Review Uniquer suggests code fix ways that already fixed by human reviewers in past.",
+  "author": "Yuki Ueda <ueda.yuki.un7@is.naist.jp> (http://ikuyadeu.github.io/)",
+  "license": "ISC",
+  "repository": "https://github.com/Ikuyadeu/corebot.git",
+  "homepage": "https://github.com/Ikuyadeu/corebot",
+  "bugs": "https://github.com/Ikuyadeu/corebot/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./lib/index.js",
+    "lint": "standard **/*.ts --fix",
+    "test": "jest && standard **/*.ts",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "probot": "^7.4.0",
+    "request": "^2.88.0",
+    "typescript-parser": "^2.6.1",
+    "vscode-textmate": "^4.0.1",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.18",
+    "@types/request": "^2.48.1",
+    "eslint-plugin-typescript": "^0.14.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9",
+    "smee-client": "^1.0.2",
+    "standard": "^12.0.1",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.2",
+    "typescript-eslint-parser": "^21.0.2"
+  },
+  "engines": {
+    "node": ">= 10.15.0"
+  },
+  "standard": {
+    "parser": "typescript-eslint-parser",
+    "env": [
+      "jest"
+    ],
+    "plugins": [
+      "typescript"
+    ]
+  }
+}
