@@ -55,9 +55,6 @@ export function convertSource(tokens: string[], code: string[]) {
 }
 
 export function getTriggarableCode(tokens: string[], patterns: string) {
-    if (patterns === "") {
-        patterns = fs.readFileSync("./pattern.json").toString();
-    }
     const patternJson = JSON.parse(patterns);
 
     for (const pattern of patternJson) {

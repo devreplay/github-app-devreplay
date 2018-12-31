@@ -1,3 +1,4 @@
+import fs from "fs";
 import { Application, Context } from "probot";
 import { INITIAL } from "vscode-textmate";
 import { devideByToken } from "./parser";
@@ -9,8 +10,7 @@ export = (app: Application) => {
 
     async function changeSuggest(context: Context) {
         const issue = context.issue();
-        const options = await context.github.repos.getContents(await context.repo({path: "pattern.json"}));
-        const pattern = new Buffer(options.data.content, "base64").toString();
+        const pattern = await readPatternFile(context);
 
         const allFiles = await context.github.pullRequests.listFiles(issue);
         for (const file of allFiles.data) {
@@ -48,6 +48,20 @@ export = (app: Application) => {
 
     app.on("pull_request.opened", changeSuggest);
 };
+
+async function readPatternFile(context: Context) {
+    let pattern: string;
+    try {
+        const options = await context.github.repos.getContents(await context.repo({path: "pattern.json"}));
+        pattern = Buffer.alloc(options.data.content, "base64").toString();
+    } catch (err) {
+        return fs.readFileSync("./pattern.json").toString();
+    }
+    if (pattern === "") {
+        pattern = fs.readFileSync("./pattern.json").toString();
+    }
+    return pattern;
+}
 
 /**
  * Identify kind of source file
