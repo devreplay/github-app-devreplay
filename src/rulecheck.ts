@@ -1,5 +1,3 @@
-import fs from "fs";
-
 export function convertSource(tokens: string[], code: string[]) {
     const originalTokens = [];
     const convertedTokens = [];
