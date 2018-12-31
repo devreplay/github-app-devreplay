@@ -34,10 +34,11 @@ export = (app: Application) => {
                 if (!code) { continue; }
                 const tokensConvertedDiff = convertSource(tokenvalues, code);
                 if (tokensConvertedDiff === null) { continue; }
-                const diff = `\`\`\`diff\n
-                - ${tokensConvertedDiff.originalTokens.join("")}\n
-                + ${tokensConvertedDiff.convertedTokens.join("")}\n
-                \`\`\``;
+                const diff = `
+\`\`\`diff
+- ${tokensConvertedDiff.originalTokens.join("")}
++ ${tokensConvertedDiff.convertedTokens.join("")}
+\`\`\``;
                 const output = `Your \`${file.filename}\` should be\n${diff}`;
                 const params = context.issue({body: output});
                 context.github.issues.createComment(params);
