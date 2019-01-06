@@ -1,0 +1,54 @@
+[
+    {
+      "code": [
+        "  self",
+        "  .",
+        "- assertFalse",
+        "+ assertNotIn",
+        "- in",
+        "+ ,"
+      ],
+      "trigger": [
+        "self",
+        ".",
+        "assertFalse",
+        "in"
+      ]
+    },
+    {
+      "code": [
+        "- itervalues",
+        "+ values"
+      ],
+      "trigger": [
+        "itervalues"
+      ]
+    },
+    {
+      "code": [
+        "- xrange",
+        "+ range"
+      ],
+      "trigger": [
+        "xrange"
+      ]
+    },
+    {
+      "code": [
+        "  self .",
+        "- assertEqual",
+        "+ assertIsNone",
+        "- ,",
+        "- None",
+        "  )"
+      ],
+      "trigger": [
+        "self",
+        ".",
+        "assertEqual",
+        ",",
+        "None",
+        ")"
+      ]
+    }
+]

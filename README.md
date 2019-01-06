@@ -2,7 +2,54 @@
 
 Review Uniquer suggests code fix ways that already fixed by human reviewers in past.
 
-## Setup
+![screeenshot](https://raw.githubusercontent.com/Ikuyadeu/review-uniquer/master/img/Usage.gif?token=AH-0wuuMacNCXN86wKQdanxFaQod7FUFks5cMyaDwA%3D%3D)
+
+## Usage
+
+1. Create `pattern.json` file in your repo, like bellow:
+`trigger` is bad source code.
+`code` is fix way of source code.
+
+```json
+[
+    {
+      "code": [
+        "  self",
+        "  .",
+        "- assertFalse",
+        "+ assertIn",
+        "- in",
+        "+ ,"
+      ],
+      "trigger": [
+        "self",
+        ".",
+        "assertFalse",
+        "in"
+      ]
+    },
+    {
+      "code": [
+        "- itervalues",
+        "+ values"
+      ],
+      "trigger": [
+        "itervalues"
+      ]
+    }
+]
+```
+
+2. The developer(you) submits a pull request
+3. This bot suggests fix pattern.
+
+
+
+
+## Contributing
+
+
+### Setup
 
 ```sh
 # Install dependencies
@@ -14,8 +61,6 @@ npm run build
 # Run the bot
 npm start
 ```
-
-## Contributing
 
 If you have suggestions for how another-code-reviewer could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
 

@@ -1,0 +1,7651 @@
+[
+ {
+  "count": 28,
+  "code": [
+   "  @",
+   "- flaky",
+   "+ skip",
+   "+ (",
+   "+ 'COURSEWARE PAGE TIMEOUT: This test fails to load the Coursware Page'",
+   "+ )"
+  ],
+  "trigger": [
+   "@",
+   "flaky"
+  ],
+  "trigarable_len": 28,
+  "unadoptable_len": 0,
+  "accuracy": 1.0,
+  "rule_sum": 312,
+  "change_sum": 4803,
+  "trigarrable_sum": 18984
+ },
+ {
+  "count": 28,
+  "code": [
+   "  =",
+   "  datetime",
+   "  .",
+   "- now",
+   "+ utcnow",
+   "  (",
+   "  )"
+  ],
+  "trigger": [
+   "=",
+   "datetime",
+   ".",
+   "now",
+   "(",
+   ")"
+  ],
+  "trigarable_len": 28,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 27,
+  "code": [
+   "- image_path",
+   "+ test_input_path"
+  ],
+  "trigger": [
+   "image_path"
+  ],
+  "trigarable_len": 27,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 26,
+  "code": [
+   "  self",
+   "  .",
+   "  now",
+   "  =",
+   "  datetime",
+   "  .",
+   "  datetime",
+   "  .",
+   "- now",
+   "+ utcnow",
+   "  (",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "now",
+   "=",
+   "datetime",
+   ".",
+   "datetime",
+   ".",
+   "now",
+   "(",
+   ")"
+  ],
+  "trigarable_len": 26,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 24,
+  "code": [
+   "- \"\"\"Initializes the current instance of the object (can be overridden).\"\"\"",
+   "- \"\"\"Writes the contents of this object and returns the content as a dict object.\"\"\"",
+   "+ \"\"\"Initializes the current instance of the object.\n        \"\"\"",
+   "+ \"\"\"Writes the contents of this object and returns the content as a dict object.\n        \n        Returns:\n            (dict). the object that represents the same data as the current instance.\n        \"\"\""
+  ],
+  "trigger": [
+   "\"\"\"Initializes",
+   "the",
+   "current",
+   "instance",
+   "of",
+   "the",
+   "object",
+   "(can",
+   "be",
+   "overridden).\"\"\"",
+   "\"\"\"Writes",
+   "the",
+   "contents",
+   "of",
+   "this",
+   "object",
+   "and",
+   "returns",
+   "the",
+   "content",
+   "as",
+   "a",
+   "dict",
+   "object.\"\"\""
+  ],
+  "trigarable_len": 24,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 24,
+  "code": [
+   "- \"\"\"Writes the contents of this object and returns the content as a dict object.\"\"\"",
+   "+ \"\"\"Initializes the current instance of the object.\n        \"\"\"",
+   "+ \"\"\"Writes the contents of this object and returns the content as a dict object.\n        \n        Returns:\n            (dict). the object that represents the same data as the current instance.\n        \"\"\""
+  ],
+  "trigger": [
+   "\"\"\"Writes",
+   "the",
+   "contents",
+   "of",
+   "this",
+   "object",
+   "and",
+   "returns",
+   "the",
+   "content",
+   "as",
+   "a",
+   "dict",
+   "object.\"\"\""
+  ],
+  "trigarable_len": 24,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 24,
+  "code": [
+   "  (",
+   "- image_path",
+   "+ test_input_path",
+   "  )"
+  ],
+  "trigger": [
+   "(",
+   "image_path",
+   ")"
+  ],
+  "trigarable_len": 24,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 24,
+  "code": [
+   "- elif",
+   "+ if",
+   "  :"
+  ],
+  "trigger": [
+   "elif",
+   ":"
+  ],
+  "trigarable_len": 36,
+  "unadoptable_len": 12,
+  "accuracy": 0.6666666666666666,
+  "except": [
+   "  elif",
+   "  isinstance",
+   "  (",
+   "  deprecate_info",
+   "  ,",
+   "- str",
+   "+ STRING_TYPES",
+   "  )",
+   "  :",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 24,
+  "code": [
+   "+ ."
+  ],
+  "trigger": [],
+  "trigarable_len": 290,
+  "unadoptable_len": 258,
+  "accuracy": 0.1103448275862069,
+  "except": [
+   "- \"\"\"\nInputReader\n\"\"\"",
+   "+ \"\"\" InputReader \"\"\"",
+   "  NEWLINE",
+   "  INDENT",
+   "- \"\"\"\n    Accepts incoming messages and routes them to a configured output\n    \"\"\"",
+   "+ \"\"\"Accepts incoming messages and routes them to a configured output\"\"\"",
+   "  NEWLINE",
+   "  DEDENT"
+  ]
+ },
+ {
+  "count": 23,
+  "code": [
+   "+ (",
+   "- ]"
+  ],
+  "trigger": [
+   "]"
+  ],
+  "trigarable_len": 183,
+  "unadoptable_len": 160,
+  "accuracy": 0.12568306010928962,
+  "except": [
+   "  self",
+   "  .",
+   "+ subscribe_to_topic",
+   "- consumer",
+   "- .",
+   "- subscribe",
+   "  (",
+   "- [",
+   "- self",
+   "- .",
+   "- topic",
+   "- ]",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 22,
+  "code": [
+   "- '/'",
+   "+ '/login'",
+   "  ,"
+  ],
+  "trigger": [
+   "'/'",
+   ","
+  ],
+  "trigarable_len": 22,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 22,
+  "code": [
+   "+ (",
+   "- (",
+   "  )"
+  ],
+  "trigger": [
+   "(",
+   ")"
+  ],
+  "trigarable_len": 1226,
+  "unadoptable_len": 1204,
+  "accuracy": 0.01794453507340946,
+  "except": [
+   "  pipeline_json",
+   "  =",
+   "  utils",
+   "  .",
+   "- get_json_module_artifacts",
+   "+ get_json_module_templates",
+   "  (",
+   "  pipeline_file",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 21,
+  "code": [
+   "- '''\n        '''",
+   "+ \"\"\"\n        \"\"\""
+  ],
+  "trigger": [
+   "'''\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "'''"
+  ],
+  "trigarable_len": 67,
+  "unadoptable_len": 46,
+  "accuracy": 0.31343283582089554,
+  "except": [
+   "- '''\n        Gets the default AzureStorageConfig configuration specified by the AZURE_ STORAGE_ACCOUNT and STORAGE_KEY properties.\n        '''",
+   "+ \"\"\"Gets the default AzureStorageConfig configuration specified by the\n        AZURE_ STORAGE_ACCOUNT and STORAGE_KEY properties.\"\"\"",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 21,
+  "code": [
+   "- [",
+   "- ]",
+   "+ )"
+  ],
+  "trigger": [
+   "[",
+   "]"
+  ],
+  "trigarable_len": 163,
+  "unadoptable_len": 142,
+  "accuracy": 0.12883435582822086,
+  "except": [
+   "  self",
+   "  .",
+   "+ subscribe_to_topic",
+   "- consumer",
+   "- .",
+   "- subscribe",
+   "  (",
+   "- [",
+   "- self",
+   "- .",
+   "- topic",
+   "- ]",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 21,
+  "code": [
+   "+ (",
+   "- ]",
+   "+ )"
+  ],
+  "trigger": [
+   "]"
+  ],
+  "trigarable_len": 183,
+  "unadoptable_len": 162,
+  "accuracy": 0.11475409836065574,
+  "except": [
+   "  self",
+   "  .",
+   "+ subscribe_to_topic",
+   "- consumer",
+   "- .",
+   "- subscribe",
+   "  (",
+   "- [",
+   "- self",
+   "- .",
+   "- topic",
+   "- ]",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 20,
+  "code": [
+   "- attempted",
+   "+ first_attempted"
+  ],
+  "trigger": [
+   "attempted"
+  ],
+  "trigarable_len": 20,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 20,
+  "code": [
+   "  :",
+   "  type",
+   "  :",
+   "+ str",
+   "- list",
+   "- of",
+   "- int"
+  ],
+  "trigger": [
+   ":",
+   "type",
+   ":",
+   "list",
+   "of",
+   "int"
+  ],
+  "trigarable_len": 20,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 20,
+  "code": [
+   "  \"\"",
+   "+ ."
+  ],
+  "trigger": [
+   "\"\""
+  ],
+  "trigarable_len": 20,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 18,
+  "code": [
+   "  self",
+   "  .",
+   "- receving",
+   "+ receiving"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "receving"
+  ],
+  "trigarable_len": 18,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 18,
+  "code": [
+   "  def",
+   "  (",
+   "  architecture_name",
+   "  ,",
+   "- image_path",
+   "+ test_input_path",
+   "  )",
+   "  :"
+  ],
+  "trigger": [
+   "def",
+   "(",
+   "architecture_name",
+   ",",
+   "image_path",
+   ")",
+   ":"
+  ],
+  "trigarable_len": 18,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 18,
+  "code": [
+   "  course_name",
+   "  =",
+   "  .",
+   "- display_number_with_default",
+   "+ display_name_with_default"
+  ],
+  "trigger": [
+   "course_name",
+   "=",
+   ".",
+   "display_number_with_default"
+  ],
+  "trigarable_len": 18,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 18,
+  "code": [
+   "  api_version",
+   "  =",
+   "- \"6.0\"",
+   "+ \"6.4\""
+  ],
+  "trigger": [
+   "api_version",
+   "=",
+   "\"6.0\""
+  ],
+  "trigarable_len": 18,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 18,
+  "code": [
+   "- \"\"\"Initializes the current instance of the object (can be overridden).\"\"\"",
+   "- \"\"\"Writes the contents of this object and returns the content as a dict object.\"\"\"",
+   "+ \"\"\"Initializes the current instance of the object.\n        \"\"\"",
+   "+ \"\"\"Writes the contents of this object and returns the content as a dict object.\n        \n        Returns:\n            (dict). the object that represents the same data as the current instance.\n        \"\"\""
+  ],
+  "trigger": [
+   "\"\"\"Initializes",
+   "the",
+   "current",
+   "instance",
+   "of",
+   "the",
+   "object",
+   "(can",
+   "be",
+   "overridden).\"\"\"",
+   "\"\"\"Writes",
+   "the",
+   "contents",
+   "of",
+   "this",
+   "object",
+   "and",
+   "returns",
+   "the",
+   "content",
+   "as",
+   "a",
+   "dict",
+   "object.\"\"\""
+  ],
+  "trigarable_len": 18,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 18,
+  "code": [
+   "  :",
+   "  type",
+   "  :",
+   "- number",
+   "+ int"
+  ],
+  "trigger": [
+   ":",
+   "type",
+   ":",
+   "number"
+  ],
+  "trigarable_len": 30,
+  "unadoptable_len": 12,
+  "accuracy": 0.6,
+  "except": [
+   "  :",
+   "  type",
+   "  manifest_version",
+   "  :",
+   "- number",
+   "+ float",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 17,
+  "code": [
+   "+ .",
+   "- ]"
+  ],
+  "trigger": [
+   "]"
+  ],
+  "trigarable_len": 183,
+  "unadoptable_len": 166,
+  "accuracy": 0.09289617486338798,
+  "except": [
+   "  self",
+   "  .",
+   "+ subscribe_to_topic",
+   "- consumer",
+   "- .",
+   "- subscribe",
+   "  (",
+   "- [",
+   "- self",
+   "- .",
+   "- topic",
+   "- ]",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 16,
+  "code": [
+   "  from",
+   "  django",
+   "  .",
+   "+ urls",
+   "- core",
+   "- .",
+   "- urlresolvers",
+   "  import"
+  ],
+  "trigger": [
+   "from",
+   "django",
+   ".",
+   "core",
+   ".",
+   "urlresolvers",
+   "import"
+  ],
+  "trigarable_len": 16,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 16,
+  "code": [
+   "  resource",
+   "+ ."
+  ],
+  "trigger": [
+   "resource"
+  ],
+  "trigarable_len": 18,
+  "unadoptable_len": 2,
+  "accuracy": 0.8888888888888888,
+  "except": [
+   "- '''\n        Check if entry exists in table\n        '''",
+   "+ \"\"\"Check if entry exists in table.\n\n        \"\"\"",
+   "  NEWLINE",
+   "  INDENT",
+   "  except",
+   "+ Exception",
+   "  :",
+   "  NEWLINE",
+   "- '''\n        Write resource to table\n        :param resource: Expecting Resource object (see Common.Contracts.Resource)\n        '''",
+   "+ \"\"\"Write resource to table.\n\n        :param resource: Expecting Resource object\n        (see Common.Contracts.Resource)\n        \"\"\"",
+   "  NEWLINE",
+   "  DEDENT"
+  ]
+ },
+ {
+  "count": 16,
+  "code": [
+   "- [",
+   "+ ."
+  ],
+  "trigger": [
+   "["
+  ],
+  "trigarable_len": 169,
+  "unadoptable_len": 153,
+  "accuracy": 0.09467455621301775,
+  "except": [
+   "- messages",
+   "+ test_messages",
+   "  =",
+   "  [",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 15,
+  "code": [
+   "  =",
+   "- ALL_LANGUAGES",
+   "+ ALL_LANGUAGES_DUPLICATE"
+  ],
+  "trigger": [
+   "=",
+   "ALL_LANGUAGES"
+  ],
+  "trigarable_len": 15,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 15,
+  "code": [
+   "- [",
+   "+ .",
+   "+ (",
+   "- ]",
+   "+ )"
+  ],
+  "trigger": [
+   "[",
+   "]"
+  ],
+  "trigarable_len": 163,
+  "unadoptable_len": 148,
+  "accuracy": 0.09202453987730061,
+  "except": [
+   "  self",
+   "  .",
+   "+ subscribe_to_topic",
+   "- consumer",
+   "- .",
+   "- subscribe",
+   "  (",
+   "- [",
+   "- self",
+   "- .",
+   "- topic",
+   "- ]",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 15,
+  "code": [
+   "+ (",
+   "  self",
+   "  .",
+   "- (",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "(",
+   ")"
+  ],
+  "trigarable_len": 243,
+  "unadoptable_len": 228,
+  "accuracy": 0.06172839506172839,
+  "except": [
+   "  msg",
+   "  =",
+   "  self",
+   "  .",
+   "  consumer",
+   "  .",
+   "  poll",
+   "  (",
+   "+ 0.00000001",
+   "- timeout",
+   "- =",
+   "- 1.0",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 15,
+  "code": [
+   "+ self",
+   "  .",
+   "- (",
+   "  )"
+  ],
+  "trigger": [
+   ".",
+   "(",
+   ")"
+  ],
+  "trigarable_len": 635,
+  "unadoptable_len": 620,
+  "accuracy": 0.023622047244094488,
+  "except": [
+   "  pipeline_json",
+   "  =",
+   "  utils",
+   "  .",
+   "- get_json_module_artifacts",
+   "+ get_json_module_templates",
+   "  (",
+   "  pipeline_file",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 14,
+  "code": [
+   "- spawn_xacro_model",
+   "+ spawn_xacro_urdf_model",
+   "  (",
+   "  name",
+   "  ,",
+   "  block_path",
+   "  ,",
+   "  pose",
+   "  ,",
+   "  world_reference_frame",
+   "  ,",
+   "  mappings",
+   "  )"
+  ],
+  "trigger": [
+   "spawn_xacro_model",
+   "(",
+   "name",
+   ",",
+   "block_path",
+   ",",
+   "pose",
+   ",",
+   "world_reference_frame",
+   ",",
+   "mappings",
+   ")"
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "- deployed_service_new_health_report",
+   "+ deployed_service_package_new_health_report",
+   "  =",
+   "- \"DeployedServiceNewHealthReport\"",
+   "+ \"DeployedServicePackageNewHealthReport\"",
+   "- deployed_service_health_report_expired",
+   "+ deployed_service_package_health_report_expired",
+   "  =",
+   "- \"DeployedServiceHealthReportExpired\"",
+   "+ \"DeployedServicePackageHealthReportExpired\""
+  ],
+  "trigger": [
+   "deployed_service_new_health_report",
+   "=",
+   "\"DeployedServiceNewHealthReport\"",
+   "deployed_service_health_report_expired",
+   "=",
+   "\"DeployedServiceHealthReportExpired\""
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "- attempted",
+   "+ first_attempted",
+   "  ="
+  ],
+  "trigger": [
+   "attempted",
+   "="
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "+ self",
+   "+ .",
+   "+ task_planner",
+   "+ .",
+   "+ execute_task",
+   "+ (",
+   "  self",
+   "  .",
+   "  task_planner",
+   "  .",
+   "  create_main_loop_task",
+   "- (",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "task_planner",
+   ".",
+   "create_main_loop_task",
+   "(",
+   ")"
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "  sys",
+   "  .",
+   "  exit",
+   "  (",
+   "- test_debug",
+   "+ test_head_debug",
+   "  (",
+   "  )",
+   "  )"
+  ],
+  "trigger": [
+   "sys",
+   ".",
+   "exit",
+   "(",
+   "test_debug",
+   "(",
+   ")",
+   ")"
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "  self",
+   "  .",
+   "  kind",
+   "  =",
+   "- 'DeployedServiceNewHealthReport'",
+   "+ 'DeployedServicePackageNewHealthReport'"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "kind",
+   "=",
+   "'DeployedServiceNewHealthReport'"
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "  self",
+   "  .",
+   "  kind",
+   "  =",
+   "- 'DeployedServiceHealthReportExpired'",
+   "+ 'DeployedServicePackageHealthReportExpired'"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "kind",
+   "=",
+   "'DeployedServiceHealthReportExpired'"
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "  rospy",
+   "  .",
+   "  sleep",
+   "  (",
+   "- 0.1",
+   "+ 0.4",
+   "  )"
+  ],
+  "trigger": [
+   "rospy",
+   ".",
+   "sleep",
+   "(",
+   "0.1",
+   ")"
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "  print",
+   "  (",
+   "- \"Exiting example.\"",
+   "+ \"Finished.\"",
+   "  )"
+  ],
+  "trigger": [
+   "print",
+   "(",
+   "\"Exiting",
+   "example.\"",
+   ")"
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "  api_version",
+   "  =",
+   "- \"6.1\"",
+   "+ \"6.2\""
+  ],
+  "trigger": [
+   "api_version",
+   "=",
+   "\"6.1\""
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "  COPYRIGHT_YEAR",
+   "  =",
+   "- \"2017\"",
+   "+ datetime",
+   "+ .",
+   "+ date",
+   "+ .",
+   "+ today",
+   "+ (",
+   "+ )",
+   "+ .",
+   "+ year"
+  ],
+  "trigger": [
+   "COPYRIGHT_YEAR",
+   "=",
+   "\"2017\""
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "  +",
+   "- '. This may be a problem due incorrect expected ordering.'",
+   "+ '. This may be a problem due incorrect expected ordering. '",
+   "+ 'I.e (\"delete\", \"show\", \"list\") != (\"show\", \"delete\", \"list\")'",
+   "  )",
+   "  )"
+  ],
+  "trigger": [
+   "+",
+   "'.",
+   "This",
+   "may",
+   "be",
+   "a",
+   "problem",
+   "due",
+   "incorrect",
+   "expected",
+   "ordering.'",
+   ")",
+   ")"
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 14,
+  "code": [
+   "- 404",
+   "+ 302"
+  ],
+  "trigger": [
+   "404"
+  ],
+  "trigarable_len": 20,
+  "unadoptable_len": 6,
+  "accuracy": 0.7,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 13,
+  "code": [
+   "  self",
+   "  .",
+   "  assertRedirects",
+   "  (",
+   "  response",
+   "  ,",
+   "- \"/\"",
+   "+ \"/login\"",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "assertRedirects",
+   "(",
+   "response",
+   ",",
+   "\"/\"",
+   ")"
+  ],
+  "trigarable_len": 13,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 13,
+  "code": [
+   "  self",
+   "  .",
+   "  assertContains",
+   "  (",
+   "  resp",
+   "  ,",
+   "- u\"You can keep working for a higher grade\"",
+   "+ u\"You can continue working on the course.\"",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "assertContains",
+   "(",
+   "resp",
+   ",",
+   "u\"You",
+   "can",
+   "keep",
+   "working",
+   "for",
+   "a",
+   "higher",
+   "grade\"",
+   ")"
+  ],
+  "trigarable_len": 13,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 13,
+  "code": [
+   "  self",
+   "  .",
+   "  assertContains",
+   "  (",
+   "  noshib_response",
+   "  ,",
+   "  <missing ')'>",
+   "  (",
+   "- u\"Sign in or Register | {platform_name}\"",
+   "+ u\"Sign in or Register {platform_name}\"",
+   "  <missing ')'>"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "assertContains",
+   "(",
+   "noshib_response",
+   ",",
+   "<missing",
+   "')'>",
+   "(",
+   "u\"Sign",
+   "in",
+   "or",
+   "Register",
+   "|",
+   "{platform_name}\"",
+   "<missing",
+   "')'>"
+  ],
+  "trigarable_len": 13,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 13,
+  "code": [
+   "  course_org_filter",
+   "  =",
+   "  configuration_helpers",
+   "  .",
+   "- get_current_site_orgs",
+   "+ get_value",
+   "  (",
+   "+ 'course_org_filter'",
+   "  )"
+  ],
+  "trigger": [
+   "course_org_filter",
+   "=",
+   "configuration_helpers",
+   ".",
+   "get_current_site_orgs",
+   "(",
+   ")"
+  ],
+  "trigarable_len": 13,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 13,
+  "code": [
+   "  choices",
+   "  =",
+   "  settings",
+   "  .",
+   "- ALL_LANGUAGES",
+   "+ ALL_LANGUAGES_DUPLICATE",
+   "  ,"
+  ],
+  "trigger": [
+   "choices",
+   "=",
+   "settings",
+   ".",
+   "ALL_LANGUAGES",
+   ","
+  ],
+  "trigarable_len": 13,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 13,
+  "code": [
+   "  :",
+   "- \"('registration/password_reset_done.html', [])\"",
+   "+ .",
+   "+ format",
+   "+ (",
+   "+ bad_email",
+   "+ )",
+   "  ,"
+  ],
+  "trigger": [
+   ":",
+   "\"('registration/password_reset_done.html',",
+   "[])\"",
+   ","
+  ],
+  "trigarable_len": 13,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 13,
+  "code": [
+   "  'httponly'",
+   "  :",
+   "- None",
+   "+ True",
+   "  ,"
+  ],
+  "trigger": [
+   "'httponly'",
+   ":",
+   "None",
+   ","
+  ],
+  "trigarable_len": 13,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 13,
+  "code": [
+   "- False",
+   "+ True"
+  ],
+  "trigger": [
+   "False"
+  ],
+  "trigarable_len": 65,
+  "unadoptable_len": 52,
+  "accuracy": 0.2,
+  "except": [
+   "  self",
+   "  .",
+   "- receving",
+   "+ receiving",
+   "  =",
+   "  False",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 12,
+  "code": [
+   "- 'ci-app-pipeline.json'",
+   "+ 'azure-ci-app-pipeline.json'"
+  ],
+  "trigger": [
+   "'ci-app-pipeline.json'"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 12,
+  "code": [
+   "- \"is_cohorted\"",
+   "+ \"is_divided\"",
+   "  :"
+  ],
+  "trigger": [
+   "\"is_cohorted\"",
+   ":"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 12,
+  "code": [
+   "  self",
+   "  .",
+   "- receving",
+   "+ receiving",
+   "  ="
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "receving",
+   "="
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 12,
+  "code": [
+   "  from",
+   "  django",
+   "  .",
+   "+ urls",
+   "- core",
+   "- .",
+   "- urlresolvers",
+   "  import",
+   "  reverse"
+  ],
+  "trigger": [
+   "from",
+   "django",
+   ".",
+   "core",
+   ".",
+   "urlresolvers",
+   "import",
+   "reverse"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 12,
+  "code": [
+   "  for",
+   "  index",
+   "  in",
+   "  range",
+   "  (",
+   "- 3",
+   "+ 2",
+   "  )",
+   "  :"
+  ],
+  "trigger": [
+   "for",
+   "index",
+   "in",
+   "range",
+   "(",
+   "3",
+   ")",
+   ":"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 12,
+  "code": [
+   "  IR_node",
+   "  .",
+   "- 'hasBias'",
+   "+ 'use_bias'"
+  ],
+  "trigger": [
+   "IR_node",
+   ".",
+   "'hasBias'"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 12,
+  "code": [
+   "  :",
+   "  {",
+   "  'key'",
+   "  :",
+   "  ,",
+   "  'type'",
+   "  :",
+   "- '[int]'",
+   "+ 'str'",
+   "  }"
+  ],
+  "trigger": [
+   ":",
+   "{",
+   "'key'",
+   ":",
+   ",",
+   "'type'",
+   ":",
+   "'[int]'",
+   "}"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 12,
+  "code": [
+   "  :",
+   "  type",
+   "  :",
+   "  ~",
+   "- bot",
+   "+ botframework",
+   "  .",
+   "  connector",
+   "  .",
+   "  models",
+   "  ."
+  ],
+  "trigger": [
+   ":",
+   "type",
+   ":",
+   "~",
+   "bot",
+   ".",
+   "connector",
+   ".",
+   "models",
+   "."
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 12,
+  "code": [
+   "  \"context\"",
+   "  :",
+   "+ context_override",
+   "- eventtracker",
+   "- .",
+   "- get_tracker",
+   "- (",
+   "- )",
+   "- .",
+   "- resolve_context",
+   "- (",
+   "- )",
+   "  ,"
+  ],
+  "trigger": [
+   "\"context\"",
+   ":",
+   "eventtracker",
+   ".",
+   "get_tracker",
+   "(",
+   ")",
+   ".",
+   "resolve_context",
+   "(",
+   ")",
+   ","
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 12,
+  "code": [
+   "  \"\"",
+   "  resource",
+   "+ ."
+  ],
+  "trigger": [
+   "\"\"",
+   "resource"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 12,
+  "code": [
+   "  self",
+   "  .",
+   "- 404",
+   "+ 302",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "404",
+   ")"
+  ],
+  "trigarable_len": 16,
+  "unadoptable_len": 4,
+  "accuracy": 0.75,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 12,
+  "code": [
+   "  self",
+   "  .",
+   "  (",
+   "- 404",
+   "+ 302",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "(",
+   "404",
+   ")"
+  ],
+  "trigarable_len": 16,
+  "unadoptable_len": 4,
+  "accuracy": 0.75,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 12,
+  "code": [
+   "  :",
+   "  {",
+   "  'key'",
+   "  :",
+   "  ,",
+   "  'type'",
+   "  :",
+   "- 'number'",
+   "+ 'float'",
+   "  }",
+   "  ,"
+  ],
+  "trigger": [
+   ":",
+   "{",
+   "'key'",
+   ":",
+   ",",
+   "'type'",
+   ":",
+   "'number'",
+   "}",
+   ","
+  ],
+  "trigarable_len": 20,
+  "unadoptable_len": 8,
+  "accuracy": 0.6,
+  "except": [
+   "  'duration'",
+   "  :",
+   "  {",
+   "  'key'",
+   "  :",
+   "  'duration'",
+   "  ,",
+   "  'type'",
+   "  :",
+   "- 'number'",
+   "+ 'int'",
+   "  }",
+   "  ,",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 12,
+  "code": [
+   "  =",
+   "- '0.6.0'",
+   "+ '0.6.1'"
+  ],
+  "trigger": [
+   "=",
+   "'0.6.0'"
+  ],
+  "trigarable_len": 24,
+  "unadoptable_len": 12,
+  "accuracy": 0.5,
+  "except": [
+   "  version",
+   "  =",
+   "- '0.6.0'",
+   "+ '0.8.0'",
+   "  NEWLINE",
+   "  release",
+   "  =",
+   "- '0.6.0'",
+   "+ '0.8.0'",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 12,
+  "code": [
+   "  :",
+   "  type",
+   "  :",
+   "- number",
+   "+ float"
+  ],
+  "trigger": [
+   ":",
+   "type",
+   ":",
+   "number"
+  ],
+  "trigarable_len": 30,
+  "unadoptable_len": 18,
+  "accuracy": 0.4,
+  "except": [
+   "  :",
+   "  type",
+   "  duration",
+   "  :",
+   "- number",
+   "+ int",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 12,
+  "code": [
+   "+ import",
+   "- import"
+  ],
+  "trigger": [
+   "import"
+  ],
+  "trigarable_len": 431,
+  "unadoptable_len": 419,
+  "accuracy": 0.027842227378190254,
+  "except": [
+   "- from",
+   "- jsonschema",
+   "  import",
+   "- validate",
+   "+ cli",
+   "+ .",
+   "+ utils",
+   "+ as",
+   "+ utils",
+   "  NEWLINE",
+   "- SCHEMA_FILE",
+   "- =",
+   "- 'manifest.schema.json'",
+   "- NEWLINE"
+  ]
+ },
+ {
+  "count": 11,
+  "code": [
+   "+ fail_quality",
+   "- raise",
+   "- BuildFailure",
+   "  (",
+   "+ ,"
+  ],
+  "trigger": [
+   "raise",
+   "BuildFailure",
+   "("
+  ],
+  "trigarable_len": 11,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 11,
+  "code": [
+   "+ fail_quality",
+   "- raise",
+   "- BuildFailure",
+   "  ("
+  ],
+  "trigger": [
+   "raise",
+   "BuildFailure",
+   "("
+  ],
+  "trigarable_len": 11,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 11,
+  "code": [
+   "  self",
+   "  .",
+   "  assertRedirects",
+   "  (",
+   "  response",
+   "  ,",
+   "- '/'",
+   "+ '/login'",
+   "  ,",
+   "  fetch_redirect_response",
+   "  =",
+   "  False",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "assertRedirects",
+   "(",
+   "response",
+   ",",
+   "'/'",
+   ",",
+   "fetch_redirect_response",
+   "=",
+   "False",
+   ")"
+  ],
+  "trigarable_len": 11,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 11,
+  "code": [
+   "  =",
+   "- '0.1.0'",
+   "+ '0.1.1'"
+  ],
+  "trigger": [
+   "=",
+   "'0.1.0'"
+  ],
+  "trigarable_len": 11,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 11,
+  "code": [
+   "  'target'",
+   "  :",
+   "- '/'",
+   "+ '/login'",
+   "  ,"
+  ],
+  "trigger": [
+   "'target'",
+   ":",
+   "'/'",
+   ","
+  ],
+  "trigarable_len": 11,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 11,
+  "code": [
+   "  'SQUELCH_PII_IN_LOGS'",
+   "  :",
+   "- False",
+   "+ True",
+   "  ,"
+  ],
+  "trigger": [
+   "'SQUELCH_PII_IN_LOGS'",
+   ":",
+   "False",
+   ","
+  ],
+  "trigarable_len": 11,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 11,
+  "code": [
+   "- 'value'",
+   "+ u'value'",
+   "  :",
+   "- \"('registration/password_reset_done.html', [])\"",
+   "+ u\"('registration/password_reset_done.html', [('email', u'{}')])\"",
+   "+ .",
+   "+ format",
+   "+ (",
+   "+ bad_email",
+   "+ )",
+   "  ,"
+  ],
+  "trigger": [
+   "'value'",
+   ":",
+   "\"('registration/password_reset_done.html',",
+   "[])\"",
+   ","
+  ],
+  "trigarable_len": 13,
+  "unadoptable_len": 2,
+  "accuracy": 0.8461538461538461,
+  "except": [
+   "  'value'",
+   "  :",
+   "- \"('registration/password_reset_done.html', [])\"",
+   "+ \"('registration/password_reset_done.html', [{ 'email': {} }])\"",
+   "+ .",
+   "+ format",
+   "+ (",
+   "+ bad_email",
+   "+ )",
+   "  ,",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 10,
+  "code": [
+   "- _copy_and_repo",
+   "+ _copy_and_reop",
+   "  (",
+   "  ,",
+   "  IR_node",
+   "  )"
+  ],
+  "trigger": [
+   "_copy_and_repo",
+   "(",
+   ",",
+   "IR_node",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "- _copy_and_repo",
+   "+ _copy_and_reop",
+   "  (",
+   "  ,",
+   "  )"
+  ],
+  "trigger": [
+   "_copy_and_repo",
+   "(",
+   ",",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "- ServiceHealthReportCreatedEvent",
+   "+ ServiceNewHealthReportEvent",
+   "  ,",
+   "  ServiceHealthReportExpiredEvent"
+  ],
+  "trigger": [
+   "ServiceHealthReportCreatedEvent",
+   ",",
+   "ServiceHealthReportExpiredEvent"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "- \"is_cohorted\"",
+   "+ \"is_divided\"",
+   "  :",
+   "  ,"
+  ],
+  "trigger": [
+   "\"is_cohorted\"",
+   ":",
+   ","
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "- \"\"\"Gets or sets the id property.\"\"\""
+  ],
+  "trigger": [
+   "\"\"\"Gets",
+   "or",
+   "sets",
+   "the",
+   "id",
+   "property.\"\"\""
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "- \"\"\"\n    Accepts incoming messages and routes them to a configured output\n    \"\"\"",
+   "+ \"\"\"Accepts incoming messages and routes them to a configured output\"\"\""
+  ],
+  "trigger": [
+   "\"\"\"\n",
+   "",
+   "",
+   "",
+   "Accepts",
+   "incoming",
+   "messages",
+   "and",
+   "routes",
+   "them",
+   "to",
+   "a",
+   "configured",
+   "output\n",
+   "",
+   "",
+   "",
+   "\"\"\""
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  Factory",
+   "- and",
+   "- instance",
+   "- resolving",
+   "  for",
+   "- <missing 'in'>",
+   "- <missing ':'>"
+  ],
+  "trigger": [
+   "Factory",
+   "and",
+   "instance",
+   "resolving",
+   "for",
+   "<missing",
+   "'in'>",
+   "<missing",
+   "':'>"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "+ \"\"\"Start receiving messages from streaming endpoint\"\"\"",
+   "+ \"\"\"Stop incoming messages from streaming endpoint\"\"\"",
+   "  \"\"",
+   "  Send",
+   "  messages",
+   "  onwards"
+  ],
+  "trigger": [
+   "\"\"",
+   "Send",
+   "messages",
+   "onwards"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  uri_path_start",
+   "  =",
+   "  'http://localhost:'",
+   "  +",
+   "  str",
+   "  (",
+   "  self",
+   "  .",
+   "  port",
+   "  )",
+   "  +",
+   "- path",
+   "+ url_path"
+  ],
+  "trigger": [
+   "uri_path_start",
+   "=",
+   "'http://localhost:'",
+   "+",
+   "str",
+   "(",
+   "self",
+   ".",
+   "port",
+   ")",
+   "+",
+   "path"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  python_requires",
+   "  =",
+   "- '>=2.7,!=3.4,!=3.3,!=3.2,!=3.1,!=3.0,<=3.7'",
+   "+ '>=2.7,!=3.4,!=3.3,!=3.2,!=3.1,!=3.0,<3.8'",
+   "  ,"
+  ],
+  "trigger": [
+   "python_requires",
+   "=",
+   "'>=2.7,!=3.4,!=3.3,!=3.2,!=3.1,!=3.0,<=3.7'",
+   ","
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  msg",
+   "  =",
+   "  _",
+   "  (",
+   "- 'You can keep working for a higher grade, or request your certificate now.'",
+   "+ 'You can continue working on the course.'",
+   "  )"
+  ],
+  "trigger": [
+   "msg",
+   "=",
+   "_",
+   "(",
+   "'You",
+   "can",
+   "keep",
+   "working",
+   "for",
+   "a",
+   "higher",
+   "grade,",
+   "or",
+   "request",
+   "your",
+   "certificate",
+   "now.'",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  href",
+   "  =",
+   "- 'http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/'",
+   "+ 'http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/'",
+   "+ 'open-release-ficus.master/'"
+  ],
+  "trigger": [
+   "href",
+   "=",
+   "'http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/'"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  assert_equal",
+   "  (",
+   "  sum",
+   "  ,",
+   "- 4594",
+   "+ 30513",
+   "  ,",
+   "  \"sum of all features is incorrect!\"",
+   "  )"
+  ],
+  "trigger": [
+   "assert_equal",
+   "(",
+   "sum",
+   ",",
+   "4594",
+   ",",
+   "\"sum",
+   "of",
+   "all",
+   "features",
+   "is",
+   "incorrect!\"",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  assert",
+   "  output4",
+   "  .",
+   "  shape",
+   "  ==",
+   "  (",
+   "  5",
+   "  ,",
+   "- 7",
+   "+ 13",
+   "  )"
+  ],
+  "trigger": [
+   "assert",
+   "output4",
+   ".",
+   "shape",
+   "==",
+   "(",
+   "5",
+   ",",
+   "7",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  assert",
+   "  features",
+   "  .",
+   "  shape",
+   "  ==",
+   "  (",
+   "  248",
+   "  ,",
+   "- 409",
+   "+ 802",
+   "  )"
+  ],
+  "trigger": [
+   "assert",
+   "features",
+   ".",
+   "shape",
+   "==",
+   "(",
+   "248",
+   ",",
+   "409",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  assert",
+   "  features",
+   "  .",
+   "  shape",
+   "  ==",
+   "  (",
+   "  248",
+   "  ,",
+   "- 259",
+   "+ 652",
+   "  )"
+  ],
+  "trigger": [
+   "assert",
+   "features",
+   ".",
+   "shape",
+   "==",
+   "(",
+   "248",
+   ",",
+   "259",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  assert",
+   "  X",
+   "  .",
+   "  shape",
+   "  ==",
+   "  (",
+   "  25",
+   "  ,",
+   "- 22",
+   "+ 117",
+   "  )"
+  ],
+  "trigger": [
+   "assert",
+   "X",
+   ".",
+   "shape",
+   "==",
+   "(",
+   "25",
+   ",",
+   "22",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  assert",
+   "  X",
+   "  .",
+   "  shape",
+   "  ==",
+   "  (",
+   "  25",
+   "  ,",
+   "- 21",
+   "+ 116",
+   "  )"
+  ],
+  "trigger": [
+   "assert",
+   "X",
+   ".",
+   "shape",
+   "==",
+   "(",
+   "25",
+   ",",
+   "21",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  EDX_PPA_KEY_SERVER",
+   "  =",
+   "- \"hkp://pgp.mit.edu:80\"",
+   "+ \"keyserver.ubuntu.com\""
+  ],
+  "trigger": [
+   "EDX_PPA_KEY_SERVER",
+   "=",
+   "\"hkp://pgp.mit.edu:80\""
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  =",
+   "- '5.0.0'",
+   "+ '6.0.0'"
+  ],
+  "trigger": [
+   "=",
+   "'5.0.0'"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  =",
+   "  open",
+   "  (",
+   "  ,",
+   "- 'r'",
+   "+ 'rU'",
+   "  )"
+  ],
+  "trigger": [
+   "=",
+   "open",
+   "(",
+   ",",
+   "'r'",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  :",
+   "  type",
+   "  :",
+   "  list",
+   "  of",
+   "- number",
+   "+ int"
+  ],
+  "trigger": [
+   ":",
+   "type",
+   ":",
+   "list",
+   "of",
+   "number"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  :",
+   "  param",
+   "  name",
+   "  :",
+   "+ Name",
+   "+ of",
+   "+ the",
+   "  Gateway",
+   "  resource",
+   "- name",
+   "  ."
+  ],
+  "trigger": [
+   ":",
+   "param",
+   "name",
+   ":",
+   "Gateway",
+   "resource",
+   "name",
+   "."
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "  .",
+   "- attempted",
+   "+ first_attempted"
+  ],
+  "trigger": [
+   ".",
+   "attempted"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 10,
+  "code": [
+   "- +=",
+   "- [",
+   "+ .",
+   "+ append",
+   "+ (",
+   "- ]",
+   "+ )"
+  ],
+  "trigger": [
+   "+=",
+   "[",
+   "]"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 2,
+  "accuracy": 0.8333333333333334,
+  "except": [
+   "  input_parts_names",
+   "  +=",
+   "  [",
+   "- part",
+   "+ fc_name",
+   "  ]",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 10,
+  "code": [
+   "  version",
+   "  =",
+   "- '4.0.0'",
+   "+ '5.0.0'",
+   "  ,"
+  ],
+  "trigger": [
+   "version",
+   "=",
+   "'4.0.0'",
+   ","
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 2,
+  "accuracy": 0.8333333333333334,
+  "except": [
+   "  version",
+   "  =",
+   "- '4.0.0'",
+   "+ '6.0.0'",
+   "  ,",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 10,
+  "code": [
+   "  VERSION",
+   "  =",
+   "- \"6.4.0.23\"",
+   "+ \"6.4.0.35\""
+  ],
+  "trigger": [
+   "VERSION",
+   "=",
+   "\"6.4.0.23\""
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 4,
+  "accuracy": 0.7142857142857143,
+  "except": [
+   "  VERSION",
+   "  =",
+   "- \"6.4.0.23\"",
+   "+ \"6.4.0.0\"",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 10,
+  "code": [
+   "  version",
+   "  =",
+   "- '0.10.0'",
+   "+ '0.11.0'"
+  ],
+  "trigger": [
+   "version",
+   "=",
+   "'0.10.0'"
+  ],
+  "trigarable_len": 16,
+  "unadoptable_len": 6,
+  "accuracy": 0.625,
+  "except": [
+   "  version",
+   "  =",
+   "- '0.10.0'",
+   "+ '0.11.3'",
+   "  NEWLINE",
+   "  release",
+   "  =",
+   "- '0.10.0'",
+   "+ '0.11.3'",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 10,
+  "code": [
+   "- logging",
+   "+ logger",
+   "  ."
+  ],
+  "trigger": [
+   "logging",
+   "."
+  ],
+  "trigarable_len": 26,
+  "unadoptable_len": 16,
+  "accuracy": 0.38461538461538464,
+  "except": [
+   "  handler",
+   "  =",
+   "  logging",
+   "  .",
+   "- ApplicationInsightsHandler",
+   "+ LoggingHandler",
+   "  (",
+   "  'test'",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 10,
+  "code": [
+   "- logging",
+   "+ logger",
+   "  .",
+   "  ("
+  ],
+  "trigger": [
+   "logging",
+   ".",
+   "("
+  ],
+  "trigarable_len": 26,
+  "unadoptable_len": 16,
+  "accuracy": 0.38461538461538464,
+  "except": [
+   "  handler",
+   "  =",
+   "  logging",
+   "  .",
+   "- ApplicationInsightsHandler",
+   "+ LoggingHandler",
+   "  (",
+   "  'test'",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 9,
+  "code": [
+   "- _copy_and_repo",
+   "+ _copy_and_reop",
+   "  (",
+   "  ,",
+   "  IR_node",
+   "  ,",
+   "  )"
+  ],
+  "trigger": [
+   "_copy_and_repo",
+   "(",
+   ",",
+   "IR_node",
+   ",",
+   ")"
+  ],
+  "trigarable_len": 9,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 9,
+  "code": [
+   "  from",
+   "  i18n",
+   "- .",
+   "+ import",
+   "  config",
+   "- import",
+   "- CONFIGURATION"
+  ],
+  "trigger": [
+   "from",
+   "i18n",
+   ".",
+   "config",
+   "import",
+   "CONFIGURATION"
+  ],
+  "trigarable_len": 9,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 9,
+  "code": [
+   "  display_course",
+   "  .",
+   "- display_name_with_default",
+   "+ display_number_with_default",
+   "  ,"
+  ],
+  "trigger": [
+   "display_course",
+   ".",
+   "display_name_with_default",
+   ","
+  ],
+  "trigarable_len": 9,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 9,
+  "code": [
+   "  course_name",
+   "  =",
+   "  self",
+   "  .",
+   "  course",
+   "  .",
+   "- display_number_with_default",
+   "+ display_name_with_default"
+  ],
+  "trigger": [
+   "course_name",
+   "=",
+   "self",
+   ".",
+   "course",
+   ".",
+   "display_number_with_default"
+  ],
+  "trigarable_len": 9,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 9,
+  "code": [
+   "  course_name",
+   "  =",
+   "  display_course",
+   "  .",
+   "- display_number_with_default",
+   "+ display_name_with_default"
+  ],
+  "trigger": [
+   "course_name",
+   "=",
+   "display_course",
+   ".",
+   "display_number_with_default"
+  ],
+  "trigarable_len": 9,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 9,
+  "code": [
+   "  CoremlParser",
+   "  .",
+   "- _copy_and_repo",
+   "+ _copy_and_reop",
+   "  (",
+   "  ,",
+   "  IR_node",
+   "  )"
+  ],
+  "trigger": [
+   "CoremlParser",
+   ".",
+   "_copy_and_repo",
+   "(",
+   ",",
+   "IR_node",
+   ")"
+  ],
+  "trigarable_len": 9,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 9,
+  "code": [
+   "  CoremlParser",
+   "  .",
+   "- _copy_and_repo",
+   "+ _copy_and_reop",
+   "  (",
+   "  ,",
+   "  )"
+  ],
+  "trigger": [
+   "CoremlParser",
+   ".",
+   "_copy_and_repo",
+   "(",
+   ",",
+   ")"
+  ],
+  "trigarable_len": 9,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 9,
+  "code": [
+   "  =",
+   "- image_path",
+   "+ test_input_path"
+  ],
+  "trigger": [
+   "=",
+   "image_path"
+  ],
+  "trigarable_len": 9,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 9,
+  "code": [
+   "  ,",
+   "- 404",
+   "+ 302"
+  ],
+  "trigger": [
+   ",",
+   "404"
+  ],
+  "trigarable_len": 13,
+  "unadoptable_len": 4,
+  "accuracy": 0.6923076923076923,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 9,
+  "code": [
+   "- logging",
+   "+ logger",
+   "  .",
+   "  )"
+  ],
+  "trigger": [
+   "logging",
+   ".",
+   ")"
+  ],
+  "trigarable_len": 21,
+  "unadoptable_len": 12,
+  "accuracy": 0.42857142857142855,
+  "except": [
+   "  handler",
+   "  =",
+   "  logging",
+   "  .",
+   "- ApplicationInsightsHandler",
+   "+ LoggingHandler",
+   "  (",
+   "  'test'",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 9,
+  "code": [
+   "- logging",
+   "+ logger",
+   "  .",
+   "  (",
+   "  )"
+  ],
+  "trigger": [
+   "logging",
+   ".",
+   "(",
+   ")"
+  ],
+  "trigarable_len": 21,
+  "unadoptable_len": 12,
+  "accuracy": 0.42857142857142855,
+  "except": [
+   "  handler",
+   "  =",
+   "  logging",
+   "  .",
+   "- ApplicationInsightsHandler",
+   "+ LoggingHandler",
+   "  (",
+   "  'test'",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 9,
+  "code": [
+   "- None",
+   "+ ."
+  ],
+  "trigger": [
+   "None"
+  ],
+  "trigarable_len": 132,
+  "unadoptable_len": 119,
+  "accuracy": 0.09848484848484848,
+  "except": [
+   "  return",
+   "- None",
+   "+ response",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 8,
+  "code": [
+   "- get_cohort_id",
+   "+ get_group_id_for_user",
+   "  (",
+   "  user",
+   "  ,",
+   "  )"
+  ],
+  "trigger": [
+   "get_cohort_id",
+   "(",
+   "user",
+   ",",
+   ")"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "- elif",
+   "+ if",
+   "  section",
+   "  ==",
+   "  'Arguments'",
+   "  :"
+  ],
+  "trigger": [
+   "elif",
+   "section",
+   "==",
+   "'Arguments'",
+   ":"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "- elif",
+   "+ if",
+   "  has_pass",
+   "  :"
+  ],
+  "trigger": [
+   "elif",
+   "has_pass",
+   ":"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "- 'broker'",
+   "+ 'client'",
+   "  :",
+   "  {"
+  ],
+  "trigger": [
+   "'broker'",
+   ":",
+   "{"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "- 'Content-Length: 120\\r\\n\\r\\n{\"params\": {\"ScriptDatabaseOptions\": \"True\"}, \"jsonrpc\": \"2.0\", \"method\": \"scriptingService/ScriptDatabase\", \"id\": null}'",
+   "+ b'Content-Length: 120\\r\\n\\r\\n{\"id\": null, \"jsonrpc\": \"2.0\", \"method\": \"scriptingService/ScriptDatabase\", \"params\": {\"ScriptDatabaseOptions\": \"True\"}}'"
+  ],
+  "trigger": [
+   "'Content-Length:",
+   "120\\r\\n\\r\\n{\"params\":",
+   "{\"ScriptDatabaseOptions\":",
+   "\"True\"},",
+   "\"jsonrpc\":",
+   "\"2.0\",",
+   "\"method\":",
+   "\"scriptingService/ScriptDatabase\",",
+   "\"id\":",
+   "null}'"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "- '1\\tpython-line\\tspam.py\\t10\\tNone\\tNone\\tNone'",
+   "+ '1\\tpython-line\\tspam.py\\t10\\tNone\\tNone\\tNone\\tNone'",
+   "  )",
+   "  )"
+  ],
+  "trigger": [
+   "'1\\tpython-line\\tspam.py\\t10\\tNone\\tNone\\tNone'",
+   ")",
+   ")"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "- \"\"\"Gets or sets the id property.\"\"\"",
+   "+ \"\"\"The id property.\n        \n        Returns:\n            (string). the property value. (defaults to: None)\n        \"\"\""
+  ],
+  "trigger": [
+   "\"\"\"Gets",
+   "or",
+   "sets",
+   "the",
+   "id",
+   "property.\"\"\""
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "- \"\"\"Gets or sets the id property.\"\"\"",
+   "+ \"\"\"The id property.\n        \n        Returns:\n            (string). the property value. (defaults to: None)\n        \"\"\"",
+   "+ \"\"\"The id property.\n        \n        Args:\n            value (string). the property value.\n        \"\"\""
+  ],
+  "trigger": [
+   "\"\"\"Gets",
+   "or",
+   "sets",
+   "the",
+   "id",
+   "property.\"\"\""
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "- \"\"\"\nInputReader\n\"\"\"",
+   "+ \"\"\" InputReader \"\"\"",
+   "- \"\"\"\n    Accepts incoming messages and routes them to a configured output\n    \"\"\"",
+   "+ \"\"\"Accepts incoming messages and routes them to a configured output\"\"\""
+  ],
+  "trigger": [
+   "\"\"\"\nInputReader\n\"\"\"",
+   "\"\"\"\n",
+   "",
+   "",
+   "",
+   "Accepts",
+   "incoming",
+   "messages",
+   "and",
+   "routes",
+   "them",
+   "to",
+   "a",
+   "configured",
+   "output\n",
+   "",
+   "",
+   "",
+   "\"\"\""
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "- \"\"\"\nFactory for OutputWriter\n\"\"\"",
+   "+ \"\"\" Factory for OutputWriter \"\"\""
+  ],
+  "trigger": [
+   "\"\"\"\nFactory",
+   "for",
+   "OutputWriter\n\"\"\""
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "- \"\"\"\n        Start receiving messages\n        \"\"\"",
+   "+ \"\"\"Start receiving messages from streaming endpoint\"\"\"",
+   "- \"\"\"\n        Stop incoming messages from server\n        \"\"\"",
+   "+ \"\"\"Stop incoming messages from streaming endpoint\"\"\"",
+   "  \"\"",
+   "  Send",
+   "  messages",
+   "  onwards"
+  ],
+  "trigger": [
+   "\"\"\"\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Start",
+   "receiving",
+   "messages\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "\"\"\"",
+   "\"\"\"\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Stop",
+   "incoming",
+   "messages",
+   "from",
+   "server\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "\"\"\"",
+   "\"\"",
+   "Send",
+   "messages",
+   "onwards"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "+ from",
+   "+ enum",
+   "  import",
+   "- enum",
+   "+ Enum",
+   "  class",
+   "  ContentTypes",
+   "  (",
+   "- enum",
+   "+ Enum",
+   "  )",
+   "  :"
+  ],
+  "trigger": [
+   "import",
+   "enum",
+   "class",
+   "ContentTypes",
+   "(",
+   "enum",
+   ")",
+   ":"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  version",
+   "  =",
+   "- '0.11.1'",
+   "+ '0.11.2'"
+  ],
+  "trigger": [
+   "version",
+   "=",
+   "'0.11.1'"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  self",
+   "  .",
+   "- locations_to_scores",
+   "+ problem_scores"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "locations_to_scores"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  patch",
+   "  (",
+   "- 'lms.djangoapps.instructor_task.tasks_helper._get_current_task'",
+   "+ 'lms.djangoapps.instructor_task.tasks_helper.runner._get_current_task'",
+   "  )"
+  ],
+  "trigger": [
+   "patch",
+   "(",
+   "'lms.djangoapps.instructor_task.tasks_helper._get_current_task'",
+   ")"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  if",
+   "+ int",
+   "+ (",
+   "  axis",
+   "+ )",
+   "  ==",
+   "- \"-1\"",
+   "+ -",
+   "+ 1",
+   "  :"
+  ],
+  "trigger": [
+   "if",
+   "axis",
+   "==",
+   "\"-1\"",
+   ":"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  from",
+   "  .",
+   "- treefeaturizer",
+   "+ _treefeaturizer",
+   "  import"
+  ],
+  "trigger": [
+   "from",
+   ".",
+   "treefeaturizer",
+   "import"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  from",
+   "  .",
+   "- onevsrestclassifier",
+   "+ _onevsrestclassifier",
+   "  import"
+  ],
+  "trigger": [
+   "from",
+   ".",
+   "onevsrestclassifier",
+   "import"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  from",
+   "  .",
+   "- naivebayesclassifier",
+   "+ _naivebayesclassifier",
+   "  import"
+  ],
+  "trigger": [
+   "from",
+   ".",
+   "naivebayesclassifier",
+   "import"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  from",
+   "  .",
+   "- mutualinformationselector",
+   "+ _mutualinformationselector",
+   "  import"
+  ],
+  "trigger": [
+   "from",
+   ".",
+   "mutualinformationselector",
+   "import"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  from",
+   "  .",
+   "- countselector",
+   "+ _countselector",
+   "  import"
+  ],
+  "trigger": [
+   "from",
+   ".",
+   "countselector",
+   "import"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  from",
+   "  .",
+   "  .",
+   "- mutualinformationselector",
+   "+ _mutualinformationselector",
+   "  import"
+  ],
+  "trigger": [
+   "from",
+   ".",
+   ".",
+   "mutualinformationselector",
+   "import"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  for",
+   "  index",
+   "  in",
+   "  range",
+   "  (",
+   "- 2",
+   "+ 3",
+   "  )",
+   "  :"
+  ],
+  "trigger": [
+   "for",
+   "index",
+   "in",
+   "range",
+   "(",
+   "2",
+   ")",
+   ":"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  course_org_filter",
+   "  =",
+   "  configuration_helpers",
+   "  .",
+   "- get_value",
+   "+ get_current_site_orgs",
+   "  (",
+   "- 'course_org_filter'",
+   "  )"
+  ],
+  "trigger": [
+   "course_org_filter",
+   "=",
+   "configuration_helpers",
+   ".",
+   "get_value",
+   "(",
+   "'course_org_filter'",
+   ")"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  IR_node",
+   "  .",
+   "  attr",
+   "  [",
+   "- 'hasBias'",
+   "+ 'use_bias'",
+   "  ]",
+   "  .",
+   "  b"
+  ],
+  "trigger": [
+   "IR_node",
+   ".",
+   "attr",
+   "[",
+   "'hasBias'",
+   "]",
+   ".",
+   "b"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  IR_node",
+   "  .",
+   "  attr",
+   "  [",
+   "- 'hasBias'",
+   "+ 'use_bias'",
+   "  ]",
+   "  ."
+  ],
+  "trigger": [
+   "IR_node",
+   ".",
+   "attr",
+   "[",
+   "'hasBias'",
+   "]",
+   "."
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  CoremlParser",
+   "  .",
+   "- _copy_and_repo",
+   "+ _copy_and_reop",
+   "  (",
+   "  ,",
+   "  IR_node",
+   "  ,",
+   "  )"
+  ],
+  "trigger": [
+   "CoremlParser",
+   ".",
+   "_copy_and_repo",
+   "(",
+   ",",
+   "IR_node",
+   ",",
+   ")"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  =",
+   "- '0.6.2'",
+   "+ '0.6.4'"
+  ],
+  "trigger": [
+   "=",
+   "'0.6.2'"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  :",
+   "  {",
+   "  'key'",
+   "  :",
+   "  ,",
+   "  'type'",
+   "  :",
+   "- 'int'",
+   "+ 'str'",
+   "  }",
+   "  ,"
+  ],
+  "trigger": [
+   ":",
+   "{",
+   "'key'",
+   ":",
+   ",",
+   "'type'",
+   ":",
+   "'int'",
+   "}",
+   ","
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  :",
+   "  {",
+   "  'key'",
+   "  :",
+   "  ,",
+   "  'type'",
+   "  :",
+   "- '[int]'",
+   "+ 'str'",
+   "  }",
+   "  ,"
+  ],
+  "trigger": [
+   ":",
+   "{",
+   "'key'",
+   ":",
+   ",",
+   "'type'",
+   ":",
+   "'[int]'",
+   "}",
+   ","
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  :",
+   "  {",
+   "  'key'",
+   "  :",
+   "  ,",
+   "  'type'",
+   "  :",
+   "- '[DeployPhase]'",
+   "+ '[object]'",
+   "  }",
+   "  ,"
+  ],
+  "trigger": [
+   ":",
+   "{",
+   "'key'",
+   ":",
+   ",",
+   "'type'",
+   ":",
+   "'[DeployPhase]'",
+   "}",
+   ","
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  :",
+   "  type",
+   "  :",
+   "  ~",
+   "  azure",
+   "  .",
+   "  servicefabric",
+   "  .",
+   "  models",
+   "  .",
+   "- BackupEpoch",
+   "+ Epoch"
+  ],
+  "trigger": [
+   ":",
+   "type",
+   ":",
+   "~",
+   "azure",
+   ".",
+   "servicefabric",
+   ".",
+   "models",
+   ".",
+   "BackupEpoch"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  .",
+   "- grammar_options",
+   "+ grammar",
+   "  ."
+  ],
+  "trigger": [
+   ".",
+   "grammar_options",
+   "."
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 8,
+  "code": [
+   "  from",
+   "  .",
+   "- pipeline",
+   "+ _pipeline",
+   "  import"
+  ],
+  "trigger": [
+   "from",
+   ".",
+   "pipeline",
+   "import"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 2,
+  "accuracy": 0.8,
+  "except": [
+   "  from",
+   "  msrest",
+   "  .",
+   "- pipeline",
+   "+ universal_http",
+   "  import",
+   "  ClientRequest",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 8,
+  "code": [
+   "  [",
+   "- 'api-version=6.0'",
+   "+ 'api-version=6.4'",
+   "  ,",
+   "  'ContinuationToken=ct'",
+   "  ]",
+   "  )"
+  ],
+  "trigger": [
+   "[",
+   "'api-version=6.0'",
+   ",",
+   "'ContinuationToken=ct'",
+   "]",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 2,
+  "accuracy": 0.8,
+  "except": [
+   "- 'replica info --continuation-token=ct --partition-id=id --replica-id=replicaId'",
+   "+ 'replica info --partition-id=id --replica-id=replicaId'",
+   "  ,",
+   "  NEWLINE",
+   "  INDENT",
+   "  [",
+   "  'api-version=6.0'",
+   "- ,",
+   "- 'ContinuationToken=ct'",
+   "  ]",
+   "  )",
+   "  NEWLINE",
+   "  DEDENT"
+  ]
+ },
+ {
+  "count": 8,
+  "code": [
+   "  self",
+   "  .",
+   "  ,",
+   "- 404",
+   "+ 302",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   ",",
+   "404",
+   ")"
+  ],
+  "trigarable_len": 11,
+  "unadoptable_len": 3,
+  "accuracy": 0.7272727272727273,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 8,
+  "code": [
+   "  self",
+   "  .",
+   "  (",
+   "  ,",
+   "- 404",
+   "+ 302",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "(",
+   ",",
+   "404",
+   ")"
+  ],
+  "trigarable_len": 11,
+  "unadoptable_len": 3,
+  "accuracy": 0.7272727272727273,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 8,
+  "code": [
+   "  :",
+   "  {",
+   "  'key'",
+   "  :",
+   "  ,",
+   "  'type'",
+   "  :",
+   "- 'number'",
+   "+ 'int'",
+   "  }",
+   "  ,"
+  ],
+  "trigger": [
+   ":",
+   "{",
+   "'key'",
+   ":",
+   ",",
+   "'type'",
+   ":",
+   "'number'",
+   "}",
+   ","
+  ],
+  "trigarable_len": 20,
+  "unadoptable_len": 12,
+  "accuracy": 0.4,
+  "except": [
+   "  'manifest_version'",
+   "  :",
+   "  {",
+   "  'key'",
+   "  :",
+   "  'manifestVersion'",
+   "  ,",
+   "  'type'",
+   "  :",
+   "- 'number'",
+   "+ 'float'",
+   "  }",
+   "  ,",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 8,
+  "code": [
+   "- 2",
+   "+ 1"
+  ],
+  "trigger": [
+   "2"
+  ],
+  "trigarable_len": 22,
+  "unadoptable_len": 14,
+  "accuracy": 0.36363636363636365,
+  "except": [
+   "  for",
+   "  index",
+   "  in",
+   "  range",
+   "  (",
+   "- 2",
+   "+ 3",
+   "  )",
+   "  :",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 8,
+  "code": [
+   "  =",
+   "- '0.6.0'",
+   "+ '0.6.2'"
+  ],
+  "trigger": [
+   "=",
+   "'0.6.0'"
+  ],
+  "trigarable_len": 24,
+  "unadoptable_len": 16,
+  "accuracy": 0.3333333333333333,
+  "except": [
+   "  version",
+   "  =",
+   "- '0.6.0'",
+   "+ '0.8.0'",
+   "  NEWLINE",
+   "  release",
+   "  =",
+   "- '0.6.0'",
+   "+ '0.8.0'",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 8,
+  "code": [
+   "  :",
+   "  type",
+   "  :",
+   "- int",
+   "+ str"
+  ],
+  "trigger": [
+   ":",
+   "type",
+   ":",
+   "int"
+  ],
+  "trigarable_len": 28,
+  "unadoptable_len": 20,
+  "accuracy": 0.2857142857142857,
+  "except": [
+   "  :",
+   "  type",
+   "  content_id",
+   "  :",
+   "+ str",
+   "- list",
+   "- of",
+   "- int",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 8,
+  "code": [
+   "  from",
+   "+ ."
+  ],
+  "trigger": [
+   "from"
+  ],
+  "trigarable_len": 30,
+  "unadoptable_len": 22,
+  "accuracy": 0.26666666666666666,
+  "except": [
+   "- \"\"\"\n        Start receiving messages\n        \"\"\"",
+   "+ \"\"\"Start receiving messages from streaming endpoint\"\"\"",
+   "  NEWLINE",
+   "  INDENT",
+   "- \"\"\"\n        Stop incoming messages from server\n        \"\"\"",
+   "+ \"\"\"Stop incoming messages from streaming endpoint\"\"\"",
+   "  NEWLINE",
+   "  \"\"",
+   "- NEWLINE",
+   "  Send",
+   "  messages",
+   "  onwards",
+   "  NEWLINE",
+   "  DEDENT"
+  ]
+ },
+ {
+  "count": 8,
+  "code": [
+   "  =",
+   "- False",
+   "+ None"
+  ],
+  "trigger": [
+   "=",
+   "False"
+  ],
+  "trigarable_len": 37,
+  "unadoptable_len": 29,
+  "accuracy": 0.21621621621621623,
+  "except": [
+   "  self",
+   "  .",
+   "- receving",
+   "+ receiving",
+   "  =",
+   "  False",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 8,
+  "code": [
+   "+ (",
+   "- [",
+   "- ]"
+  ],
+  "trigger": [
+   "[",
+   "]"
+  ],
+  "trigarable_len": 163,
+  "unadoptable_len": 155,
+  "accuracy": 0.049079754601226995,
+  "except": [
+   "  self",
+   "  .",
+   "+ subscribe_to_topic",
+   "- consumer",
+   "- .",
+   "- subscribe",
+   "  (",
+   "- [",
+   "- self",
+   "- .",
+   "- topic",
+   "- ]",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 7,
+  "code": [
+   "- else",
+   "+ elif",
+   "  :"
+  ],
+  "trigger": [
+   "else",
+   ":"
+  ],
+  "trigarable_len": 7,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 7,
+  "code": [
+   "  from",
+   "  django",
+   "  .",
+   "+ urls",
+   "- core",
+   "- .",
+   "- urlresolvers",
+   "  import",
+   "  ,"
+  ],
+  "trigger": [
+   "from",
+   "django",
+   ".",
+   "core",
+   ".",
+   "urlresolvers",
+   "import",
+   ","
+  ],
+  "trigarable_len": 7,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 7,
+  "code": [
+   "  class",
+   "  UnitTestLibraries",
+   "  (",
+   "- ModuleStoreTestCase",
+   "+ CourseTestCase",
+   "  )",
+   "  :"
+  ],
+  "trigger": [
+   "class",
+   "UnitTestLibraries",
+   "(",
+   "ModuleStoreTestCase",
+   ")",
+   ":"
+  ],
+  "trigarable_len": 7,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 7,
+  "code": [
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 302"
+  ],
+  "trigger": [
+   "status_code",
+   ",",
+   "404"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 1,
+  "accuracy": 0.875,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 7,
+  "code": [
+   "  self",
+   "  .",
+   "  (",
+   "  .",
+   "  ,",
+   "- 404",
+   "+ 302",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "(",
+   ".",
+   ",",
+   "404",
+   ")"
+  ],
+  "trigarable_len": 9,
+  "unadoptable_len": 2,
+  "accuracy": 0.7777777777777778,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 7,
+  "code": [
+   "  self",
+   "  .",
+   "  .",
+   "  ,",
+   "- 404",
+   "+ 302",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   ".",
+   ",",
+   "404",
+   ")"
+  ],
+  "trigarable_len": 11,
+  "unadoptable_len": 4,
+  "accuracy": 0.6363636363636364,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 7,
+  "code": [
+   "- =",
+   "  self",
+   "  .",
+   "+ )"
+  ],
+  "trigger": [
+   "=",
+   "self",
+   "."
+  ],
+  "trigarable_len": 84,
+  "unadoptable_len": 76,
+  "accuracy": 0.09523809523809523,
+  "except": [
+   "  msg",
+   "  =",
+   "  self",
+   "  .",
+   "  consumer",
+   "  .",
+   "  poll",
+   "  (",
+   "+ 0.00000001",
+   "- timeout",
+   "- =",
+   "- 1.0",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 7,
+  "code": [
+   "+ (",
+   "- .",
+   "- (",
+   "  )"
+  ],
+  "trigger": [
+   ".",
+   "(",
+   ")"
+  ],
+  "trigarable_len": 635,
+  "unadoptable_len": 628,
+  "accuracy": 0.011023622047244094,
+  "except": [
+   "  pipeline_json",
+   "  =",
+   "  utils",
+   "  .",
+   "- get_json_module_artifacts",
+   "+ get_json_module_templates",
+   "  (",
+   "  pipeline_file",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "- user_cohort_id",
+   "+ user_group_id",
+   "  ,"
+  ],
+  "trigger": [
+   "user_cohort_id",
+   ","
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- print_stderr",
+   "+ print",
+   "  (",
+   "  self",
+   "  .",
+   "  graph",
+   "  )"
+  ],
+  "trigger": [
+   "print_stderr",
+   "(",
+   "self",
+   ".",
+   "graph",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- is_commentable_cohorted",
+   "+ is_commentable_divided"
+  ],
+  "trigger": [
+   "is_commentable_cohorted"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- get_cohort_id",
+   "+ get_group_id_for_user",
+   "  (",
+   "  request",
+   "  .",
+   "  user",
+   "  ,",
+   "  )"
+  ],
+  "trigger": [
+   "get_cohort_id",
+   "(",
+   "request",
+   ".",
+   "user",
+   ",",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- get_cohort_id",
+   "+ get_group_id_for_user",
+   "  (",
+   "  request",
+   "  .",
+   "  )"
+  ],
+  "trigger": [
+   "get_cohort_id",
+   "(",
+   "request",
+   ".",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- elif",
+   "+ if",
+   "  int_scheme",
+   "  :",
+   "- elif",
+   "+ if",
+   "  singleton_scheme",
+   "  :"
+  ],
+  "trigger": [
+   "elif",
+   "int_scheme",
+   ":",
+   "elif",
+   "singleton_scheme",
+   ":"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- compute_grades_for_course",
+   "+ compute_grades_for_course_v2"
+  ],
+  "trigger": [
+   "compute_grades_for_course"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- compile_game",
+   "+ _compile_game",
+   "  (",
+   "  game",
+   "  ,",
+   "  )"
+  ],
+  "trigger": [
+   "compile_game",
+   "(",
+   "game",
+   ",",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- attempted",
+   "+ first_attempted",
+   "  =",
+   "- False",
+   "+ None"
+  ],
+  "trigger": [
+   "attempted",
+   "=",
+   "False"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- Output",
+   "- Writer",
+   "+ OutputWriter"
+  ],
+  "trigger": [
+   "Output",
+   "Writer"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  from",
+   "  storage",
+   "+ ."
+  ],
+  "trigger": [
+   "from",
+   "storage"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- 'knack==0.3.3'",
+   "+ 'knack==0.4.1'",
+   "  ,"
+  ],
+  "trigger": [
+   "'knack==0.3.3'",
+   ","
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- 'knack==0.2.0'",
+   "+ 'knack==0.3.3'",
+   "  ,"
+  ],
+  "trigger": [
+   "'knack==0.2.0'",
+   ","
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- 'is_cohorted'",
+   "+ 'is_divided'",
+   "  :",
+   "  ,"
+  ],
+  "trigger": [
+   "'is_cohorted'",
+   ":",
+   ","
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- 'Content-Length: 120\\r\\n\\r\\n{\"params\": {\"ScriptDatabaseOptions\": \"True\"}, \"jsonrpc\": \"2.0\", \"method\": \"scriptingService/ScriptDatabase\", \"id\": null}'",
+   "- 'Content-Length: 115\\r\\n\\r\\n{\"params\": {\"ScriptCollations\": \"True\"}, \"jsonrpc\": \"2.0\", \"method\": \"scriptingService/ScriptDatabase\", \"id\": null}'",
+   "+ b'Content-Length: 120\\r\\n\\r\\n{\"id\": null, \"jsonrpc\": \"2.0\", \"method\": \"scriptingService/ScriptDatabase\", \"params\": {\"ScriptDatabaseOptions\": \"True\"}}'",
+   "+ b'Content-Length: 115\\r\\n\\r\\n{\"id\": null, \"jsonrpc\": \"2.0\", \"method\": \"scriptingService/ScriptDatabase\", \"params\": {\"ScriptCollations\": \"True\"}}'",
+   "- 'Content-Length: 113\\r\\n\\r\\n{\"params\": {\"ScriptDefaults\": \"True\"}, \"jsonrpc\": \"2.0\", \"method\": \"scriptingService/ScriptDatabase\", \"id\": null}'",
+   "+ b'Content-Length: 113\\r\\n\\r\\n{\"id\": null, \"jsonrpc\": \"2.0\", \"method\": \"scriptingService/ScriptDatabase\", \"params\": {\"ScriptDefaults\": \"True\"}}'"
+  ],
+  "trigger": [
+   "'Content-Length:",
+   "120\\r\\n\\r\\n{\"params\":",
+   "{\"ScriptDatabaseOptions\":",
+   "\"True\"},",
+   "\"jsonrpc\":",
+   "\"2.0\",",
+   "\"method\":",
+   "\"scriptingService/ScriptDatabase\",",
+   "\"id\":",
+   "null}'",
+   "'Content-Length:",
+   "115\\r\\n\\r\\n{\"params\":",
+   "{\"ScriptCollations\":",
+   "\"True\"},",
+   "\"jsonrpc\":",
+   "\"2.0\",",
+   "\"method\":",
+   "\"scriptingService/ScriptDatabase\",",
+   "\"id\":",
+   "null}'",
+   "'Content-Length:",
+   "113\\r\\n\\r\\n{\"params\":",
+   "{\"ScriptDefaults\":",
+   "\"True\"},",
+   "\"jsonrpc\":",
+   "\"2.0\",",
+   "\"method\":",
+   "\"scriptingService/ScriptDatabase\",",
+   "\"id\":",
+   "null}'"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- '1\\tpython-line\\tspam.py\\t10\\tNone\\tNone\\tNone'",
+   "+ '1\\tpython-line\\tspam.py\\t10\\tNone\\tNone\\tNone\\tNone'",
+   "  )",
+   "  ,",
+   "  )",
+   "  ,"
+  ],
+  "trigger": [
+   "'1\\tpython-line\\tspam.py\\t10\\tNone\\tNone\\tNone'",
+   ")",
+   ",",
+   ")",
+   ","
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- '''\n        Gets the default AzureStorageConfig configuration specified by the AZURE_ STORAGE_ACCOUNT and STORAGE_KEY properties.\n        '''",
+   "+ \"\"\"Gets the default AzureStorageConfig configuration specified by the\n        AZURE_ STORAGE_ACCOUNT and STORAGE_KEY properties.\"\"\""
+  ],
+  "trigger": [
+   "'''\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Gets",
+   "the",
+   "default",
+   "AzureStorageConfig",
+   "configuration",
+   "specified",
+   "by",
+   "the",
+   "AZURE_",
+   "STORAGE_ACCOUNT",
+   "and",
+   "STORAGE_KEY",
+   "properties.\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "'''"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- '''\n        Gets the default AzureCosmosDbConfig configuration specified by the AZURE_ COSMOS_TABLE, COSMOS_ACCOUNT, and COSMOS_KEY properties.\n        '''",
+   "+ \"\"\"Gets the default AzureCosmosDbConfig configuration specified by the\n        AZURE_ COSMOS_TABLE, COSMOS_ACCOUNT, and COSMOS_KEY properties.\"\"\""
+  ],
+  "trigger": [
+   "'''\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Gets",
+   "the",
+   "default",
+   "AzureCosmosDbConfig",
+   "configuration",
+   "specified",
+   "by",
+   "the",
+   "AZURE_",
+   "COSMOS_TABLE,",
+   "COSMOS_ACCOUNT,",
+   "and",
+   "COSMOS_KEY",
+   "properties.\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "'''"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- '''\n        Azure Resource Group\n        '''",
+   "+ \"\"\"Azure Resource Group.\n\n        \"\"\""
+  ],
+  "trigger": [
+   "'''\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Azure",
+   "Resource",
+   "Group\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "'''"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- \"Enrollment Tracks\"",
+   "+ \"Enrollment Track Groups\""
+  ],
+  "trigger": [
+   "\"Enrollment",
+   "Tracks\""
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- \"\"\"Initializes the current instance of the object (can be overridden).\"\"\"",
+   "- \"\"\"Writes the contents of this object and returns the content as a dict object.\"\"\"",
+   "+ \"\"\"Initializes the current instance of the object.\n        \"\"\"",
+   "+ \"\"\"Writes the contents of this object and returns the content as a dict object.\n        \n        Returns:\n            (dict). the object that represents the same data as the current instance.\n        \"\"\""
+  ],
+  "trigger": [
+   "\"\"\"Initializes",
+   "the",
+   "current",
+   "instance",
+   "of",
+   "the",
+   "object",
+   "(can",
+   "be",
+   "overridden).\"\"\"",
+   "\"\"\"Writes",
+   "the",
+   "contents",
+   "of",
+   "this",
+   "object",
+   "and",
+   "returns",
+   "the",
+   "content",
+   "as",
+   "a",
+   "dict",
+   "object.\"\"\""
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- \"\"\"Gets or sets the name property.\"\"\"",
+   "+ \"\"\"The name property.\n        \n        Returns:\n            (string). the property value. (defaults to: None)\n        \"\"\"",
+   "+ \"\"\"The name property.\n        \n        Args:\n            value (string). the property value.\n        \"\"\""
+  ],
+  "trigger": [
+   "\"\"\"Gets",
+   "or",
+   "sets",
+   "the",
+   "name",
+   "property.\"\"\""
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- \"\"\"Gets or sets the name property.\"\"\"",
+   "+ \"\"\"The name property.\n        \n        Returns:\n            (string). the property value. (defaults to: None)\n        \"\"\""
+  ],
+  "trigger": [
+   "\"\"\"Gets",
+   "or",
+   "sets",
+   "the",
+   "name",
+   "property.\"\"\""
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- \"\"\"\n    Wrapper of AzureResource implementing Resource abstract base class\n    \"\"\"",
+   "+ \"\"\"Wrapper of AzureResource implementing Resource abstract base class.\"\"\"",
+   "- '''\n        Create AzureResource from dictionary with necessary values\n        '''",
+   "+ \"\"\"Create AzureResource from dictionary with necessary values.\n\n        \"\"\""
+  ],
+  "trigger": [
+   "\"\"\"\n",
+   "",
+   "",
+   "",
+   "Wrapper",
+   "of",
+   "AzureResource",
+   "implementing",
+   "Resource",
+   "abstract",
+   "base",
+   "class\n",
+   "",
+   "",
+   "",
+   "\"\"\"",
+   "'''\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Create",
+   "AzureResource",
+   "from",
+   "dictionary",
+   "with",
+   "necessary",
+   "values\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "'''"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- \"\"\"\n    Configuration required for use of Azure CosmosDB provider\n    \"\"\"",
+   "+ \"\"\"Configuration required for use of Azure CosmosDB provider.\"\"\""
+  ],
+  "trigger": [
+   "\"\"\"\n",
+   "",
+   "",
+   "",
+   "Configuration",
+   "required",
+   "for",
+   "use",
+   "of",
+   "Azure",
+   "CosmosDB",
+   "provider\n",
+   "",
+   "",
+   "",
+   "\"\"\""
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- \"\"\"\n    Configuration required for usage of AzureStorage service\n    \"\"\"",
+   "+ \"\"\"Configuration required for usage of AzureStorage service.\"\"\""
+  ],
+  "trigger": [
+   "\"\"\"\n",
+   "",
+   "",
+   "",
+   "Configuration",
+   "required",
+   "for",
+   "usage",
+   "of",
+   "AzureStorage",
+   "service\n",
+   "",
+   "",
+   "",
+   "\"\"\""
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- \"\"\"\n    Configuration required for usage of AzureResourceService\n    \"\"\"",
+   "+ \"\"\"Configuration required for usage of AzureResourceService.\"\"\""
+  ],
+  "trigger": [
+   "\"\"\"\n",
+   "",
+   "",
+   "",
+   "Configuration",
+   "required",
+   "for",
+   "usage",
+   "of",
+   "AzureResourceService\n",
+   "",
+   "",
+   "",
+   "\"\"\""
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- \"\"\"\n        Setup logging configuration\n        \"\"\"",
+   "+ \"\"\"Setup logging configuration.\"\"\""
+  ],
+  "trigger": [
+   "\"\"\"\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Setup",
+   "logging",
+   "configuration\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "\"\"\""
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "- \"\"\"\n        Helper function for creating a Azure Storage Queue from the storage_config property defined inside of AzureConfig\n        \"\"\"",
+   "+ \"\"\"Helper function for creating a Azure Storage Queue from the\n        storage_config property defined inside of AzureConfig.\"\"\""
+  ],
+  "trigger": [
+   "\"\"\"\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "Helper",
+   "function",
+   "for",
+   "creating",
+   "a",
+   "Azure",
+   "Storage",
+   "Queue",
+   "from",
+   "the",
+   "storage_config",
+   "property",
+   "defined",
+   "inside",
+   "of",
+   "AzureConfig\n",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "\"\"\""
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "+ set_mock_endpoint",
+   "+ (",
+   "- environ",
+   "- [",
+   "- 'SF_TEST_ENDPOINT'",
+   "- ]",
+   "- =",
+   "  self",
+   "  .",
+   "  old_endpoint",
+   "+ )"
+  ],
+  "trigger": [
+   "environ",
+   "[",
+   "'SF_TEST_ENDPOINT'",
+   "]",
+   "=",
+   "self",
+   ".",
+   "old_endpoint"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "+ async_property",
+   "+ =",
+   "  no_wait",
+   "  ,",
+   "  api_version",
+   "  =",
+   "- \"6.1\"",
+   "+ \"6.2\""
+  ],
+  "trigger": [
+   "no_wait",
+   ",",
+   "api_version",
+   "=",
+   "\"6.1\""
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  Factory",
+   "- and",
+   "- instance",
+   "- resolving",
+   "  for",
+   "+ InputReader",
+   "- input",
+   "- <missing 'in'>",
+   "- reader",
+   "- <missing ':'>"
+  ],
+  "trigger": [
+   "Factory",
+   "and",
+   "instance",
+   "resolving",
+   "for",
+   "input",
+   "<missing",
+   "'in'>",
+   "reader",
+   "<missing",
+   "':'>"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "+ \"\"\"Initializes a new instance of the class.\n        \"\"\"",
+   "- \"\"\"Gets or sets the id property.\"\"\"",
+   "+ \"\"\"The id property.\n        \n        Returns:\n            (string). the property value. (defaults to: None)\n        \"\"\"",
+   "+ \"\"\"The id property.\n        \n        Args:\n            value (string). the property value.\n        \"\"\""
+  ],
+  "trigger": [
+   "\"\"\"Gets",
+   "or",
+   "sets",
+   "the",
+   "id",
+   "property.\"\"\""
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  with",
+   "  patch",
+   "  (",
+   "- 'lms.djangoapps.instructor_task.tasks_helper._get_current_task'",
+   "+ 'lms.djangoapps.instructor_task.tasks_helper.runner._get_current_task'",
+   "  )",
+   "  :"
+  ],
+  "trigger": [
+   "with",
+   "patch",
+   "(",
+   "'lms.djangoapps.instructor_task.tasks_helper._get_current_task'",
+   ")",
+   ":"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  version",
+   "  =",
+   "- '5.0.0'",
+   "+ '6.0.0'",
+   "  ,"
+  ],
+  "trigger": [
+   "version",
+   "=",
+   "'5.0.0'",
+   ","
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  version",
+   "  =",
+   "- '0.11.1'",
+   "+ '0.11.2'",
+   "  release",
+   "  =",
+   "- '0.11.1'",
+   "+ '0.11.2'"
+  ],
+  "trigger": [
+   "version",
+   "=",
+   "'0.11.1'",
+   "release",
+   "=",
+   "'0.11.1'"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  version",
+   "  =",
+   "- '0.1.0'",
+   "+ '0.1.1'",
+   "  ,"
+  ],
+  "trigger": [
+   "version",
+   "=",
+   "'0.1.0'",
+   ","
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  url",
+   "  =",
+   "- '/Names/{nameId}/$/GetProperty'",
+   "+ self",
+   "+ .",
+   "+ .",
+   "+ metadata",
+   "+ [",
+   "+ 'url'",
+   "+ ]"
+  ],
+  "trigger": [
+   "url",
+   "=",
+   "'/Names/{nameId}/$/GetProperty'"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  url",
+   "  =",
+   "- '/ImageStore/{contentPath}'",
+   "+ self",
+   "+ .",
+   "+ .",
+   "+ metadata",
+   "+ [",
+   "+ 'url'",
+   "+ ]"
+  ],
+  "trigger": [
+   "url",
+   "=",
+   "'/ImageStore/{contentPath}'"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  self",
+   "  .",
+   "- receving",
+   "+ receiving",
+   "  =",
+   "  True"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "receving",
+   "=",
+   "True"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  self",
+   "  .",
+   "- receving",
+   "+ receiving",
+   "  =",
+   "  False"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "receving",
+   "=",
+   "False"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  self",
+   "  .",
+   "- locations_to_scores",
+   "+ problem_scores",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "locations_to_scores",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  self",
+   "  .",
+   "- _send_buffer_size",
+   "+ _timeout",
+   "  =",
+   "  seconds"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "_send_buffer_size",
+   "=",
+   "seconds"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  return",
+   "  self",
+   "  .",
+   "- receving",
+   "+ receiving"
+  ],
+  "trigger": [
+   "return",
+   "self",
+   ".",
+   "receving"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  raise",
+   "+ Exception",
+   "- deploymentexceptions",
+   "- .",
+   "  ("
+  ],
+  "trigger": [
+   "raise",
+   "deploymentexceptions",
+   ".",
+   "("
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  raise",
+   "  CLIError",
+   "  (",
+   "- \"Connection endpoint not found\"",
+   "+ \"Connection endpoint not found. \"",
+   "+ \"Before running sfctl commands, connect to a cluster using \"",
+   "+ \"the 'sfctl cluster select' command.\"",
+   "  )"
+  ],
+  "trigger": [
+   "raise",
+   "CLIError",
+   "(",
+   "\"Connection",
+   "endpoint",
+   "not",
+   "found\"",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  msg",
+   "  =",
+   "  self",
+   "  .",
+   "  consumer",
+   "  .",
+   "  poll",
+   "  (",
+   "+ 0.00000001",
+   "- timeout",
+   "- =",
+   "- 1.0",
+   "  )"
+  ],
+  "trigger": [
+   "msg",
+   "=",
+   "self",
+   ".",
+   "consumer",
+   ".",
+   "poll",
+   "(",
+   "timeout",
+   "=",
+   "1.0",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  kwargs",
+   "  [",
+   "- 'groups'",
+   "+ 'group'",
+   "  ]",
+   "  =",
+   "  source_node_conv",
+   "  .",
+   "  nGroups"
+  ],
+  "trigger": [
+   "kwargs",
+   "[",
+   "'groups'",
+   "]",
+   "=",
+   "source_node_conv",
+   ".",
+   "nGroups"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  internal_context",
+   "  .",
+   "  sdk_version",
+   "  =",
+   "  platform_moniker",
+   "  +",
+   "- ':0.11.1'",
+   "+ ':0.11.2'"
+  ],
+  "trigger": [
+   "internal_context",
+   ".",
+   "sdk_version",
+   "=",
+   "platform_moniker",
+   "+",
+   "':0.11.1'"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  img",
+   "  =",
+   "  (",
+   "- image_path",
+   "+ test_input_path",
+   "  )"
+  ],
+  "trigger": [
+   "img",
+   "=",
+   "(",
+   "image_path",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  if",
+   "  (",
+   "  not",
+   "  self",
+   "  .",
+   "  stream",
+   "- is",
+   "- None",
+   "+ .",
+   "+ closed",
+   "  )",
+   "  :"
+  ],
+  "trigger": [
+   "if",
+   "(",
+   "not",
+   "self",
+   ".",
+   "stream",
+   "is",
+   "None",
+   ")",
+   ":"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  for",
+   "  style_layer",
+   "  in",
+   "- feature",
+   "+ FEATURES",
+   "  :"
+  ],
+  "trigger": [
+   "for",
+   "style_layer",
+   "in",
+   "feature",
+   ":"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  f",
+   "  =",
+   "  open",
+   "  (",
+   "  ,",
+   "- 'r'",
+   "+ 'rU'",
+   "  )"
+  ],
+  "trigger": [
+   "f",
+   "=",
+   "open",
+   "(",
+   ",",
+   "'r'",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  elif",
+   "  isinstance",
+   "  (",
+   "  val",
+   "  ,",
+   "- int",
+   "+ six",
+   "+ .",
+   "+ integer_types",
+   "  )",
+   "  :"
+  ],
+  "trigger": [
+   "elif",
+   "isinstance",
+   "(",
+   "val",
+   ",",
+   "int",
+   ")",
+   ":"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  and",
+   "  entities",
+   "  .",
+   "  This",
+   "  version",
+   "  is",
+   "  compatible",
+   "  with",
+   "  Service",
+   "  Fabric",
+   "- 6.0",
+   "+ 6.1"
+  ],
+  "trigger": [
+   "and",
+   "entities",
+   ".",
+   "This",
+   "version",
+   "is",
+   "compatible",
+   "with",
+   "Service",
+   "Fabric",
+   "6.0"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  an",
+   "+ EventHubStreamingClient",
+   "- streaming",
+   "- client",
+   "  ."
+  ],
+  "trigger": [
+   "an",
+   "streaming",
+   "client",
+   "."
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  @",
+   "  pytest",
+   "  .",
+   "  mark",
+   "  .",
+   "- integration1",
+   "+ integration"
+  ],
+  "trigger": [
+   "@",
+   "pytest",
+   ".",
+   "mark",
+   ".",
+   "integration1"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  =",
+   "- get_cohort_id",
+   "+ get_group_id_for_user",
+   "  (",
+   "  user",
+   "  ,",
+   "  course_key",
+   "  )"
+  ],
+  "trigger": [
+   "=",
+   "get_cohort_id",
+   "(",
+   "user",
+   ",",
+   "course_key",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  =",
+   "- '1.0.0a18'",
+   "+ '1.0.0a19'"
+  ],
+  "trigger": [
+   "=",
+   "'1.0.0a18'"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  =",
+   "- '1.0.0a15'",
+   "+ '1.0.0a18'"
+  ],
+  "trigger": [
+   "=",
+   "'1.0.0a15'"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  =",
+   "- '1.0.0a0'",
+   "+ '1.0.0a1'"
+  ],
+  "trigger": [
+   "=",
+   "'1.0.0a0'"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  =",
+   "- '0.1.3'",
+   "+ '0.1.4'"
+  ],
+  "trigger": [
+   "=",
+   "'0.1.3'"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  =",
+   "  .",
+   "- grammar_options",
+   "+ grammar",
+   "  ."
+  ],
+  "trigger": [
+   "=",
+   ".",
+   "grammar_options",
+   "."
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  :",
+   "  {",
+   "  'key'",
+   "  :",
+   "  ,",
+   "  'type'",
+   "  :",
+   "- '[number]'",
+   "+ '[int]'",
+   "  }"
+  ],
+  "trigger": [
+   ":",
+   "{",
+   "'key'",
+   ":",
+   ",",
+   "'type'",
+   ":",
+   "'[number]'",
+   "}"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  'pipeline/azure-ci-app-pipeline.jsonnet'",
+   "  :",
+   "- 'ci-app-pipeline.json'",
+   "+ 'azure-ci-app-pipeline.json'"
+  ],
+  "trigger": [
+   "'pipeline/azure-ci-app-pipeline.jsonnet'",
+   ":",
+   "'ci-app-pipeline.json'"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  'grade'",
+   "  :",
+   "- '67'",
+   "+ '0.67'",
+   "  ,"
+  ],
+  "trigger": [
+   "'grade'",
+   ":",
+   "'67'",
+   ","
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  '.env'",
+   "  ,",
+   "  'Pipfile'",
+   "  ,",
+   "  'logging.yaml'",
+   "  ,",
+   "- 'ci-app-pipeline.json'",
+   "+ 'azure-ci-app-pipeline.json'"
+  ],
+  "trigger": [
+   "'.env'",
+   ",",
+   "'Pipfile'",
+   ",",
+   "'logging.yaml'",
+   ",",
+   "'ci-app-pipeline.json'"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  \"ip\"",
+   "  :",
+   "- _get_request_ip",
+   "+ get_request_ip",
+   "  (",
+   "  request",
+   "  )",
+   "  ,"
+  ],
+  "trigger": [
+   "\"ip\"",
+   ":",
+   "_get_request_ip",
+   "(",
+   "request",
+   ")",
+   ","
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  \"ip\"",
+   "  :",
+   "+ _get_request_ip",
+   "+ (",
+   "  request_info",
+   "- .",
+   "- get",
+   "- (",
+   "- 'ip'",
+   "  ,",
+   "  'unknown'",
+   "  )",
+   "  ,"
+  ],
+  "trigger": [
+   "\"ip\"",
+   ":",
+   "request_info",
+   ".",
+   "get",
+   "(",
+   "'ip'",
+   ",",
+   "'unknown'",
+   ")",
+   ","
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  \"\"",
+   "  Updates",
+   "  Azure",
+   "  resource",
+   "+ ."
+  ],
+  "trigger": [
+   "\"\"",
+   "Updates",
+   "Azure",
+   "resource"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  \"\"",
+   "  Gets",
+   "  API",
+   "  version",
+   "  for",
+   "  resource",
+   "  <missing 'in'>",
+   "  type",
+   "+ .",
+   "  <missing ':'>"
+  ],
+  "trigger": [
+   "\"\"",
+   "Gets",
+   "API",
+   "version",
+   "for",
+   "resource",
+   "<missing",
+   "'in'>",
+   "type",
+   "<missing",
+   "':'>"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 6,
+  "code": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "- 404",
+   "+ 302",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "assertEqual",
+   "(",
+   "404",
+   ")"
+  ],
+  "trigarable_len": 7,
+  "unadoptable_len": 1,
+  "accuracy": 0.8571428571428571,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  self",
+   "  .",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 302",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   ".",
+   "status_code",
+   ",",
+   "404",
+   ")"
+  ],
+  "trigarable_len": 7,
+  "unadoptable_len": 1,
+  "accuracy": 0.8571428571428571,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  self",
+   "  .",
+   "  (",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 302",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "(",
+   ".",
+   "status_code",
+   ",",
+   "404",
+   ")"
+  ],
+  "trigarable_len": 7,
+  "unadoptable_len": 1,
+  "accuracy": 0.8571428571428571,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "- 2",
+   "+ 1",
+   "  ,"
+  ],
+  "trigger": [
+   "2",
+   ","
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 2,
+  "accuracy": 0.75,
+  "except": [
+   "  self",
+   "  .",
+   "  add_init",
+   "  (",
+   "  2",
+   "  ,",
+   "- \"self.{} = self.__batch_normalization({}, '{}', num_features = {}, eps = {}, momentum = {})\"",
+   "+ \"self.{} = self.__batch_normalization({}, '{}', num_features={}, eps={}, momentum={})\"",
+   "  .",
+   "  format",
+   "  (",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "- 'azure-servicefabric==6.2.0.0'",
+   "+ 'azure-servicefabric==6.3.0.0'",
+   "  ,"
+  ],
+  "trigger": [
+   "'azure-servicefabric==6.2.0.0'",
+   ","
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 2,
+  "accuracy": 0.75,
+  "except": [
+   "- 'azure-servicefabric==6.2.0.0'",
+   "+ 'azure-servicefabric==6.1.2.9'",
+   "  ,",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  =",
+   "- image_path",
+   "+ test_input_path",
+   "+ (",
+   "+ architecture_name",
+   "+ )"
+  ],
+  "trigger": [
+   "=",
+   "image_path"
+  ],
+  "trigarable_len": 9,
+  "unadoptable_len": 3,
+  "accuracy": 0.6666666666666666,
+  "except": [
+   "  img",
+   "  =",
+   "  pil_image",
+   "  .",
+   "  open",
+   "  (",
+   "- image_path",
+   "+ test_input_path",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "- logging",
+   "+ logger",
+   "  .",
+   "  debug",
+   "  (",
+   "  )"
+  ],
+  "trigger": [
+   "logging",
+   ".",
+   "debug",
+   "(",
+   ")"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 4,
+  "accuracy": 0.6,
+  "except": [
+   "+ log_status",
+   "- logging",
+   "- .",
+   "- debug",
+   "  (",
+   "  \"Creating directory '{}'.\"",
+   "  .",
+   "  format",
+   "  (",
+   "  dir",
+   "  )",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  return",
+   "- None",
+   "+ response"
+  ],
+  "trigger": [
+   "return",
+   "None"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 4,
+  "accuracy": 0.6,
+  "except": [
+   "  return",
+   "- None",
+   "+ DumplingConfig",
+   "+ (",
+   "+ {",
+   "+ }",
+   "+ )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  __version__",
+   "  =",
+   "- '0.6.0'",
+   "+ '0.6.1'"
+  ],
+  "trigger": [
+   "__version__",
+   "=",
+   "'0.6.0'"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 4,
+  "accuracy": 0.6,
+  "except": [
+   "  __version__",
+   "  =",
+   "- '0.6.0'",
+   "+ '0.6.2'",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  version",
+   "  =",
+   "- '0.6.0'",
+   "+ '0.6.1'",
+   "  ,"
+  ],
+  "trigger": [
+   "version",
+   "=",
+   "'0.6.0'",
+   ","
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 6,
+  "accuracy": 0.5,
+  "except": [
+   "  version",
+   "  =",
+   "- '0.6.0'",
+   "+ '0.8.0'",
+   "  ,",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  version",
+   "  =",
+   "- '0.10.0'",
+   "+ '0.11.3'",
+   "  release",
+   "  =",
+   "- '0.10.0'",
+   "+ '0.11.3'"
+  ],
+  "trigger": [
+   "version",
+   "=",
+   "'0.10.0'",
+   "release",
+   "=",
+   "'0.10.0'"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 6,
+  "accuracy": 0.5,
+  "except": [
+   "  version",
+   "  =",
+   "- '0.10.0'",
+   "+ '0.11.0'",
+   "  NEWLINE",
+   "  release",
+   "  =",
+   "- '0.10.0'",
+   "+ '0.11.0'",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  version",
+   "  =",
+   "- '0.10.0'",
+   "+ '0.11.0'",
+   "  release",
+   "  =",
+   "- '0.10.0'",
+   "+ '0.11.0'"
+  ],
+  "trigger": [
+   "version",
+   "=",
+   "'0.10.0'",
+   "release",
+   "=",
+   "'0.10.0'"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 6,
+  "accuracy": 0.5,
+  "except": [
+   "  version",
+   "  =",
+   "- '0.10.0'",
+   "+ '0.11.3'",
+   "  NEWLINE",
+   "  release",
+   "  =",
+   "- '0.10.0'",
+   "+ '0.11.3'",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  internal_context",
+   "  .",
+   "  sdk_version",
+   "  =",
+   "  platform_moniker",
+   "  +",
+   "- ':0.10.0'",
+   "+ ':0.11.3'"
+  ],
+  "trigger": [
+   "internal_context",
+   ".",
+   "sdk_version",
+   "=",
+   "platform_moniker",
+   "+",
+   "':0.10.0'"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 6,
+  "accuracy": 0.5,
+  "except": [
+   "  internal_context",
+   "  .",
+   "  sdk_version",
+   "  =",
+   "  platform_moniker",
+   "  +",
+   "- ':0.10.0'",
+   "+ ':0.11.0'",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  internal_context",
+   "  .",
+   "  sdk_version",
+   "  =",
+   "  platform_moniker",
+   "  +",
+   "- ':0.10.0'",
+   "+ ':0.11.0'"
+  ],
+  "trigger": [
+   "internal_context",
+   ".",
+   "sdk_version",
+   "=",
+   "platform_moniker",
+   "+",
+   "':0.10.0'"
+  ],
+  "trigarable_len": 12,
+  "unadoptable_len": 6,
+  "accuracy": 0.5,
+  "except": [
+   "  internal_context",
+   "  .",
+   "  sdk_version",
+   "  =",
+   "  platform_moniker",
+   "  +",
+   "- ':0.10.0'",
+   "+ ':0.11.3'",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  =",
+   "- '1.0.0a19'",
+   "+ '1.0.0a21'"
+  ],
+  "trigger": [
+   "=",
+   "'1.0.0a19'"
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 8,
+  "accuracy": 0.42857142857142855,
+  "except": [
+   "  __version__",
+   "  =",
+   "- '1.0.0a19'",
+   "+ '1.0.0a20'",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  =",
+   "- '1.0.0a19'",
+   "+ '1.0.0a20'"
+  ],
+  "trigger": [
+   "=",
+   "'1.0.0a19'"
+  ],
+  "trigarable_len": 14,
+  "unadoptable_len": 8,
+  "accuracy": 0.42857142857142855,
+  "except": [
+   "  __version__",
+   "  =",
+   "- '1.0.0a19'",
+   "+ '1.0.0a21'",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  if",
+   "+ not",
+   "- ==",
+   "  :"
+  ],
+  "trigger": [
+   "if",
+   "==",
+   ":"
+  ],
+  "trigarable_len": 26,
+  "unadoptable_len": 20,
+  "accuracy": 0.23076923076923078,
+  "except": [
+   "  if",
+   "  msg_type",
+   "  ==",
+   "- 'evenhub'",
+   "+ 'eventhub'",
+   "  :",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  .",
+   "  =",
+   "- False",
+   "+ None"
+  ],
+  "trigger": [
+   ".",
+   "=",
+   "False"
+  ],
+  "trigarable_len": 29,
+  "unadoptable_len": 23,
+  "accuracy": 0.20689655172413793,
+  "except": [
+   "  self",
+   "  .",
+   "- receving",
+   "+ receiving",
+   "  =",
+   "  False",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "- (",
+   "  self",
+   "  .",
+   "+ (",
+   "  )"
+  ],
+  "trigger": [
+   "(",
+   "self",
+   ".",
+   ")"
+  ],
+  "trigarable_len": 60,
+  "unadoptable_len": 54,
+  "accuracy": 0.1,
+  "except": [
+   "  self",
+   "  .",
+   "+ subscribe_to_topic",
+   "- consumer",
+   "- .",
+   "- subscribe",
+   "  (",
+   "- [",
+   "- self",
+   "- .",
+   "- topic",
+   "- ]",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "- return",
+   "+ raise"
+  ],
+  "trigger": [
+   "return"
+  ],
+  "trigarable_len": 70,
+  "unadoptable_len": 64,
+  "accuracy": 0.08571428571428572,
+  "except": [
+   "  return",
+   "  self",
+   "  .",
+   "- receving",
+   "+ receiving",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 6,
+  "code": [
+   "  .",
+   "- [",
+   "+ ."
+  ],
+  "trigger": [
+   ".",
+   "["
+  ],
+  "trigarable_len": 72,
+  "unadoptable_len": 66,
+  "accuracy": 0.08333333333333333,
+  "except": [
+   "  self",
+   "  .",
+   "+ subscribe_to_topic",
+   "- consumer",
+   "- .",
+   "- subscribe",
+   "  (",
+   "- [",
+   "- self",
+   "- .",
+   "- topic",
+   "- ]",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 5,
+  "code": [
+   "- logging",
+   "+ logger",
+   "  .",
+   "  debug",
+   "  (",
+   "  ,",
+   "  )"
+  ],
+  "trigger": [
+   "logging",
+   ".",
+   "debug",
+   "(",
+   ",",
+   ")"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- _copy_and_repo",
+   "+ _copy_and_reop",
+   "  (",
+   "  source_node",
+   "  ,",
+   "  IR_node",
+   "  ,",
+   "  )"
+  ],
+  "trigger": [
+   "_copy_and_repo",
+   "(",
+   "source_node",
+   ",",
+   "IR_node",
+   ",",
+   ")"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'latest/releasing_course/export_import_course.html#import-a-course'",
+   "+ 'open-release-ficus.master/releasing_course/export_import_course.html#import-a-course'"
+  ],
+  "trigger": [
+   "'latest/releasing_course/export_import_course.html#import-a-course'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'latest/releasing_course/export_import_course.html#export-a-course'",
+   "+ 'open-release-ficus.master/releasing_course/export_import_course.html#export-a-course'"
+  ],
+  "trigger": [
+   "'latest/releasing_course/export_import_course.html#export-a-course'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'latest/course_components/libraries.html#import-a-library'",
+   "+ 'open-release-ficus.master/course_components/libraries.html#import-a-library'"
+  ],
+  "trigger": [
+   "'latest/course_components/libraries.html#import-a-library'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'latest/course_components/libraries.html#give-other-users-access-to-your-library'",
+   "+ 'open-release-ficus.master/course_components/libraries.html#give-other-users-access-to-your-library'"
+  ],
+  "trigger": [
+   "'latest/course_components/libraries.html#give-other-users-access-to-your-library'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'latest/course_components/libraries.html#export-a-library'",
+   "+ 'open-release-ficus.master/course_components/libraries.html#export-a-library'"
+  ],
+  "trigger": [
+   "'latest/course_components/libraries.html#export-a-library'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'en/latest/set_up_course/course_staffing.html#add-course-team-members'",
+   "+ 'en/open-release-ficus.master/set_up_course/course_staffing.html#add-course-team-members'"
+  ],
+  "trigger": [
+   "'en/latest/set_up_course/course_staffing.html#add-course-team-members'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'en/latest/index.html'",
+   "+ 'en/open-release-ficus.master/index.html'"
+  ],
+  "trigger": [
+   "'en/latest/index.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'en/latest/grading/index.html'",
+   "+ 'en/open-release-ficus.master/grading/index.html'"
+  ],
+  "trigger": [
+   "'en/latest/grading/index.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'en/latest/getting_started/get_started.html'",
+   "+ 'en/open-release-ficus.master/getting_started/get_started.html'"
+  ],
+  "trigger": [
+   "'en/latest/getting_started/get_started.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'en/latest/course_features/cohorts/cohorted_courseware.html'",
+   "+ 'en/open-release-ficus.master/course_features/cohorts/cohorted_courseware.html'"
+  ],
+  "trigger": [
+   "'en/latest/course_features/cohorts/cohorted_courseware.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'en/latest/course_components/libraries.html'",
+   "+ 'en/open-release-ficus.master/course_components/libraries.html'"
+  ],
+  "trigger": [
+   "'en/latest/course_components/libraries.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'en/latest/course_assets/pages.html'",
+   "+ 'en/open-release-ficus.master/course_assets/pages.html'"
+  ],
+  "trigger": [
+   "'en/latest/course_assets/pages.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'en/latest/course_assets/handouts_updates.html'",
+   "+ 'en/open-release-ficus.master/course_assets/handouts_updates.html'"
+  ],
+  "trigger": [
+   "'en/latest/course_assets/handouts_updates.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 'en/latest/course_assets/course_files.html'",
+   "+ 'en/open-release-ficus.master/course_assets/course_files.html'"
+  ],
+  "trigger": [
+   "'en/latest/course_assets/course_files.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- '1\\tpython-line\\tspam.py\\t10\\tNone\\tNone\\tNone\\tNone\\tNone'",
+   "+ '1\\tpython-line\\tspam.py\\t10\\tNone\\tNone\\tNone\\tNone\\tNone\\tALL'",
+   "  )",
+   "  )"
+  ],
+  "trigger": [
+   "'1\\tpython-line\\tspam.py\\t10\\tNone\\tNone\\tNone\\tNone\\tNone'",
+   ")",
+   ")"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- '/en/latest/set_up_course/setting_up_student_view.html'",
+   "+ '/en/open-release-ficus.master/set_up_course/setting_up_student_view.html'"
+  ],
+  "trigger": [
+   "'/en/latest/set_up_course/setting_up_student_view.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- '/en/latest/set_up_course/creating_course_certificates.html'",
+   "+ '/en/open-release-ficus.master/set_up_course/creating_course_certificates.html'"
+  ],
+  "trigger": [
+   "'/en/latest/set_up_course/creating_course_certificates.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- '/en/latest/index.html'",
+   "+ '/en/open-release-ficus.master/index.html'"
+  ],
+  "trigger": [
+   "'/en/latest/index.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- '/en/latest/getting_started/get_started.html'",
+   "+ '/en/open-release-ficus.master/getting_started/get_started.html'"
+  ],
+  "trigger": [
+   "'/en/latest/getting_started/get_started.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- '/en/latest/developing_course/course_units.html'",
+   "+ '/en/open-release-ficus.master/developing_course/course_units.html'"
+  ],
+  "trigger": [
+   "'/en/latest/developing_course/course_units.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- '/en/latest/developing_course/course_outline.html'",
+   "+ '/en/open-release-ficus.master/developing_course/course_outline.html'"
+  ],
+  "trigger": [
+   "'/en/latest/developing_course/course_outline.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- '/en/latest/course_assets/textbooks.html'",
+   "+ '/en/open-release-ficus.master/course_assets/textbooks.html'"
+  ],
+  "trigger": [
+   "'/en/latest/course_assets/textbooks.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "- \"en/latest/course_components/libraries.html\"",
+   "+ \"en/open-release-ficus.master/course_components/libraries.html\""
+  ],
+  "trigger": [
+   "\"en/latest/course_components/libraries.html\""
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "+ return",
+   "- start_stub",
+   "- (",
+   "- requires",
+   "- .",
+   "- group",
+   "- (",
+   "- 'server'",
+   "- )",
+   "- )"
+  ],
+  "trigger": [
+   "start_stub",
+   "(",
+   "requires",
+   ".",
+   "group",
+   "(",
+   "'server'",
+   ")",
+   ")"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  u\"instructions\"",
+   "  :",
+   "- u\"The name that will identify you in your courses - <strong>(cannot be changed later)</strong>\"",
+   "+ u\"The name that will identify you in your courses - (cannot be changed later)\"",
+   "  ,"
+  ],
+  "trigger": [
+   "u\"instructions\"",
+   ":",
+   "u\"The",
+   "name",
+   "that",
+   "will",
+   "identify",
+   "you",
+   "in",
+   "your",
+   "courses",
+   "-",
+   "<strong>(cannot",
+   "be",
+   "changed",
+   "later)</strong>\"",
+   ","
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  raise",
+   "  CLIError",
+   "  (",
+   "- '--project must be specified. The value should be the ID or name of a team project.'",
+   "+ '--project must be specified. The value should be the ID or name of a team project. '"
+  ],
+  "trigger": [
+   "raise",
+   "CLIError",
+   "(",
+   "'--project",
+   "must",
+   "be",
+   "specified.",
+   "The",
+   "value",
+   "should",
+   "be",
+   "the",
+   "ID",
+   "or",
+   "name",
+   "of",
+   "a",
+   "team",
+   "project.'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  label",
+   "  =",
+   "  _",
+   "  (",
+   "- u\"I agree to the {platform_name} {terms_of_service}\"",
+   "+ u\"I agree to the {terms_of_service}\"",
+   "  )",
+   "  .",
+   "  format",
+   "  ("
+  ],
+  "trigger": [
+   "label",
+   "=",
+   "_",
+   "(",
+   "u\"I",
+   "agree",
+   "to",
+   "the",
+   "{platform_name}",
+   "{terms_of_service}\"",
+   ")",
+   ".",
+   "format",
+   "("
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  href",
+   "  =",
+   "- 'http://edx.readthedocs.io/projects/open-edx-building-and-running-a-course/en/latest/course_features'",
+   "+ 'http://edx.readthedocs.io/projects/open-edx-building-and-running-a-course/en'",
+   "+ '/open-release-ficus.master/course_features'"
+  ],
+  "trigger": [
+   "href",
+   "=",
+   "'http://edx.readthedocs.io/projects/open-edx-building-and-running-a-course/en/latest/course_features'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  href",
+   "  =",
+   "- 'http://edx.readthedocs.io/projects/edx-guide-for-students/en/latest/SFD_instructor_dash_help.html'",
+   "+ 'http://edx.readthedocs.io/projects/open-edx-learner-guide/en/'",
+   "+ 'open-release-ficus.master/SFD_instructor_dash_help.html'"
+  ],
+  "trigger": [
+   "href",
+   "=",
+   "'http://edx.readthedocs.io/projects/edx-guide-for-students/en/latest/SFD_instructor_dash_help.html'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  from",
+   "+ flaky",
+   "- bok_choy",
+   "- .",
+   "- javascript",
+   "  import",
+   "- js_defined",
+   "+ flaky"
+  ],
+  "trigger": [
+   "from",
+   "bok_choy",
+   ".",
+   "javascript",
+   "import",
+   "js_defined"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  __version__",
+   "  =",
+   "- '0.1.0'",
+   "+ '0.1.1'"
+  ],
+  "trigger": [
+   "__version__",
+   "=",
+   "'0.1.0'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  VERSION",
+   "  =",
+   "- \"0.1.0b2\"",
+   "+ \"0.1.1\""
+  ],
+  "trigger": [
+   "VERSION",
+   "=",
+   "\"0.1.0b2\""
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  USER_URL",
+   "  =",
+   "- \"https://graph.facebook.com/v2.3/me\"",
+   "+ FacebookOAuth2",
+   "+ .",
+   "+ USER_DATA_URL"
+  ],
+  "trigger": [
+   "USER_URL",
+   "=",
+   "\"https://graph.facebook.com/v2.3/me\""
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  DOC_LINK_BASE_URL",
+   "  =",
+   "- 'http://edx.readthedocs.io/projects/edx-guide-for-students'",
+   "+ 'http://edx.readthedocs.io/projects/open-edx-learner-guide'"
+  ],
+  "trigger": [
+   "DOC_LINK_BASE_URL",
+   "=",
+   "'http://edx.readthedocs.io/projects/edx-guide-for-students'"
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  \"label\"",
+   "  :",
+   "- u\"I agree to the {platform_name} {link_label}\"",
+   "+ u\"I agree to the {link_label}\"",
+   "  .",
+   "  format",
+   "  ("
+  ],
+  "trigger": [
+   "\"label\"",
+   ":",
+   "u\"I",
+   "agree",
+   "to",
+   "the",
+   "{platform_name}",
+   "{link_label}\"",
+   ".",
+   "format",
+   "("
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  \"label\"",
+   "  :",
+   "- u\"I agree to the {platform_name} Terms of Service\"",
+   "+ u\"I agree to the Terms of Service\"",
+   "  .",
+   "  format",
+   "  ("
+  ],
+  "trigger": [
+   "\"label\"",
+   ":",
+   "u\"I",
+   "agree",
+   "to",
+   "the",
+   "{platform_name}",
+   "Terms",
+   "of",
+   "Service\"",
+   ".",
+   "format",
+   "("
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "  \"label\"",
+   "  :",
+   "- u\"I agree to the {platform_name} Honor Code\"",
+   "+ u\"I agree to the Honor Code\"",
+   "  .",
+   "  format",
+   "  ("
+  ],
+  "trigger": [
+   "\"label\"",
+   ":",
+   "u\"I",
+   "agree",
+   "to",
+   "the",
+   "{platform_name}",
+   "Honor",
+   "Code\"",
+   ".",
+   "format",
+   "("
+  ],
+  "trigarable_len": 5,
+  "unadoptable_len": 0,
+  "accuracy": 1.0
+ },
+ {
+  "count": 5,
+  "code": [
+   "+ from",
+   "  import",
+   "- threading"
+  ],
+  "trigger": [
+   "import",
+   "threading"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 1,
+  "accuracy": 0.8333333333333334,
+  "except": [
+   "- import",
+   "- threading",
+   "- NEWLINE",
+   "  from",
+   "  ptvsd",
+   "  .",
+   "  _util",
+   "  import",
+   "  debug",
+   "+ ,",
+   "+ new_hidden_thread",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 5,
+  "code": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  .",
+   "  ,",
+   "- 404",
+   "+ 302",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "assertEqual",
+   "(",
+   ".",
+   ",",
+   "404",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 1,
+  "accuracy": 0.8333333333333334,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 5,
+  "code": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  ,",
+   "- 404",
+   "+ 302",
+   "  )"
+  ],
+  "trigger": [
+   "self",
+   ".",
+   "assertEqual",
+   "(",
+   ",",
+   "404",
+   ")"
+  ],
+  "trigarable_len": 6,
+  "unadoptable_len": 1,
+  "accuracy": 0.8333333333333334,
+  "except": [
+   "  self",
+   "  .",
+   "  assertEqual",
+   "  (",
+   "  response",
+   "  .",
+   "  status_code",
+   "  ,",
+   "- 404",
+   "+ 358",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 5,
+  "code": [
+   "  =",
+   "- 404",
+   "+ 302"
+  ],
+  "trigger": [
+   "=",
+   "404"
+  ],
+  "trigarable_len": 8,
+  "unadoptable_len": 3,
+  "accuracy": 0.625,
+  "except": [
+   "  self",
+   "  .",
+   "  api_response",
+   "  (",
+   "  expected_response_code",
+   "  =",
+   "- 404",
+   "+ 403",
+   "  ,",
+   "  username",
+   "  =",
+   "  'no_user'",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 5,
+  "code": [
+   "  href",
+   "  =",
+   "- 'http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/'",
+   "+ 'http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/'",
+   "+ 'open-release-ficus.master/'",
+   "+ @",
+   "+ skip",
+   "+ (",
+   "+ \"Disabled as openedx.microsoft.com doesn't use the default Open edX help links.\"",
+   "+ )"
+  ],
+  "trigger": [
+   "href",
+   "=",
+   "'http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/'"
+  ],
+  "trigarable_len": 10,
+  "unadoptable_len": 5,
+  "accuracy": 0.5,
+  "except": [
+   "  href",
+   "  =",
+   "- 'http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/'",
+   "+ 'http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/'",
+   "+ 'open-release-ficus.master/'",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 0",
+   "+ 1"
+  ],
+  "trigger": [
+   "0"
+  ],
+  "trigarable_len": 19,
+  "unadoptable_len": 14,
+  "accuracy": 0.2631578947368421,
+  "except": [
+   "  if",
+   "+ not",
+   "- len",
+   "- (",
+   "  resource_areas",
+   "- )",
+   "- ==",
+   "- 0",
+   "  :",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 5,
+  "code": [
+   "- 1",
+   "+ 0"
+  ],
+  "trigger": [
+   "1"
+  ],
+  "trigarable_len": 46,
+  "unadoptable_len": 36,
+  "accuracy": 0.21739130434782608,
+  "except": [
+   "- 1",
+   "+ os",
+   "+ .",
+   "+ getenv",
+   "+ (",
+   "+ 'TIMEOUT'",
+   "+ )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 5,
+  "code": [
+   "- return",
+   "+ raise",
+   "+ (",
+   "+ )"
+  ],
+  "trigger": [
+   "return"
+  ],
+  "trigarable_len": 70,
+  "unadoptable_len": 65,
+  "accuracy": 0.07142857142857142,
+  "except": [
+   "  return",
+   "  self",
+   "  .",
+   "- receving",
+   "+ receiving",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 5,
+  "code": [
+   "- return"
+  ],
+  "trigger": [
+   "return"
+  ],
+  "trigarable_len": 70,
+  "unadoptable_len": 65,
+  "accuracy": 0.07142857142857142,
+  "except": [
+   "  return",
+   "  self",
+   "  .",
+   "- receving",
+   "+ receiving",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 5,
+  "code": [
+   "  .",
+   "- [",
+   "+ .",
+   "+ (",
+   "- ]",
+   "+ )"
+  ],
+  "trigger": [
+   ".",
+   "[",
+   "]"
+  ],
+  "trigarable_len": 70,
+  "unadoptable_len": 65,
+  "accuracy": 0.07142857142857142,
+  "except": [
+   "  self",
+   "  .",
+   "+ subscribe_to_topic",
+   "- consumer",
+   "- .",
+   "- subscribe",
+   "  (",
+   "- [",
+   "- self",
+   "- .",
+   "- topic",
+   "- ]",
+   "  )",
+   "  NEWLINE"
+  ]
+ },
+ {
+  "count": 5,
+  "code": [
+   "- (",
+   "+ ."
+  ],
+  "trigger": [
+   "("
+  ],
+  "trigarable_len": 1360,
+  "unadoptable_len": 1327,
+  "accuracy": 0.02426470588235294,
+  "except": [
+   "  pipeline_json",
+   "  =",
+   "  utils",
+   "  .",
+   "- get_json_module_artifacts",
+   "+ get_json_module_templates",
+   "  (",
+   "  pipeline_file",
+   "  )",
+   "  NEWLINE"
+  ]
+ }
+]
