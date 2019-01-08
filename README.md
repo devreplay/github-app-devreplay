@@ -41,10 +41,7 @@ Review Uniquer suggests code fix ways that already fixed by human reviewers in p
 ```
 
 2. The developer(you) submits a pull request
-3. This bot suggests fix pattern.
-
-
-
+3. This bot suggests source code changes based on pattern(If you does not have `pattern.json`, bot suggest based on [google and Microsoft pattern](https://github.com/Ikuyadeu/review-uniquer/blob/master/package.json)).
 
 ## Contributing
 
@@ -70,5 +67,9 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
 [ISC](LICENSE) © 2018 Yuki Ueda <ueda.yuki.un7@is.naist.jp> (ikuyadeu.github.io)
 
+## Supported Language
 
+* Python (Supported: default pattern is based on google and Microsoft)
+* Java (TODO)
+* Javascript (TODO)
 
