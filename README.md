@@ -6,7 +6,8 @@ Review Uniquer suggests code fix ways that already fixed by human reviewers in p
 
 ## Usage
 
-1. Create `pattern.json` file in your repo, like bellow:
+1. Install this app from https://github.com/apps/review-uniquer
+2. Create `pattern.json` file in your repo, like bellow:
 `trigger` is bad source code.
 `code` is fix way of source code.
 
@@ -40,8 +41,8 @@ Review Uniquer suggests code fix ways that already fixed by human reviewers in p
 ]
 ```
 
-2. The developer(you) submits a pull request
-3. This bot suggests source code changes based on pattern(If you does not have `pattern.json`, bot suggest based on [google and Microsoft pattern](https://github.com/Ikuyadeu/review-uniquer/blob/master/package.json)).
+3. The developer(you) submits a pull request
+4. This bot suggests source code changes based on pattern(If you does not have `pattern.json`, bot suggest based on [google and Microsoft pattern](https://github.com/Ikuyadeu/review-uniquer/blob/master/package.json)).
 
 ## Contributing
 
