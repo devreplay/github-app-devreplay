@@ -74,6 +74,9 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 * Java (TODO)
 * Javascript (TODO)
 
+## Pattern Detection Algorythm
+
+uki Ueda, Takashi Ishio, Akinori Ihara, and Kenichi Matsumoto, “Mining Source Code Improvement Patterns from Similar Code Review Works”, In Proc. 13th International Workshop on Software Clones (IWSC’19), 2019 Peoples’ Choice Award [paper](https://ikuyadeu.github.io/papers/IWSC2019.pdf) : [slide](https://www.slideshare.net/YukiUeda4/mining-source-code-improvement-patterns-from-similar-code-review-works-133818790)
 
 ## Sponsor
 
