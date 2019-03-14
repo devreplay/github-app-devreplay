@@ -24,8 +24,7 @@
     "request": "^2.88.0",
     "typescript": "^3.2.2",
     "typescript-parser": "^2.6.1",
-    "vscode-textmate": "^4.0.1",
-    "fs": "^0.0.1-security"
+    "vscode-textmate": "^4.0.1"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",

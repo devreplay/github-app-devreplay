@@ -1,5 +1,5 @@
 // Requiring our app implementation
-import fs from "fs";
+import { readFileSync } from "fs";
 // import { INITIAL } from "vscode-textmate";
 // import { devideByToken } from "../src/parser";
 import { convertSource } from "../src/rulecheck";
@@ -43,7 +43,7 @@ const pattern = [
   "+ ,"];
 
 test("get pattern from source code", () => {
-  const patterns = fs.readFileSync("pattern_example.json").toString();
+  const patterns = readFileSync("pattern_example.json").toString();
   const code = getTriggarableCode(inputSourceToken, patterns);
 
   if (code !== null) {

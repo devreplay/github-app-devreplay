@@ -1,4 +1,4 @@
-import * as fs from "fs";
+import { readFile } from "fs";
 import * as vsctm from "vscode-textmate";
 import { IToken } from "./token";
 
@@ -18,7 +18,7 @@ const registry = new vsctm.Registry({
         const location = grammarPaths[scopeName];
         return new Promise((resolve, reject) => {
             if (!location) { return; }
-            fs.readFile(location, "utf8", (err, data) => {
+            readFile(location, "utf8", (err, data) => {
                 if (err) { reject(err); }
                 resolve(vsctm.parseRawGrammar(data, location));
                 return vsctm.parseRawGrammar(data, location);

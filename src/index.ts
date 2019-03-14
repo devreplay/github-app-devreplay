@@ -1,4 +1,4 @@
-import fs from "fs";
+import { readFileSync } from "fs";
 import { Application, Context } from "probot";
 import { INITIAL } from "vscode-textmate";
 import { devideByToken } from "./parser";
@@ -55,10 +55,10 @@ async function readPatternFile(context: Context) {
         const options = await context.github.repos.getContents(await context.repo({path: "pattern.json"}));
         pattern = Buffer.alloc(options.data.content, "base64").toString();
     } catch (err) {
-        return fs.readFileSync("./pattern.json").toString();
+        return readFileSync("./pattern.json").toString();
     }
     if (pattern === "") {
-        pattern = fs.readFileSync("./pattern.json").toString();
+        pattern = readFileSync("./pattern.json").toString();
     }
     return pattern;
 }
