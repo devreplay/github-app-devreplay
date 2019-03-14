@@ -15,7 +15,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "nodemon --exec \"npm start\"",
-    "start": "npm run build && probot run ./lib/index.js",
+    "start": "probot run ./lib/index.js",
     "test": "jest",
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
