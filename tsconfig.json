@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    // "types": ["node"],
     "allowJs": false,
     "lib": ["es2018", "es2017"],
     "module": "commonjs",

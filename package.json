@@ -1,6 +1,6 @@
 {
   "name": "review-uniquer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Review Uniquer suggests code fix ways that already fixed by human reviewers in past.",
   "author": "Yuki Ueda <ueda.yuki.un7@is.naist.jp> (http://ikuyadeu.github.io/)",
   "license": "ISC",
@@ -20,16 +20,16 @@
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
-    "probot": "^9.0.0",
+    "probot": "^9.0.1",
     "request": "^2.88.0",
-    "typescript": "^3.3.3333",
+    "typescript": "^3.2.2",
     "typescript-parser": "^2.6.1",
     "vscode-textmate": "^4.0.1",
     "fs": "^0.0.1-security"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
-    "@types/node": "^10.12.30",
+    "@types/node": "^11.11.1",
     "@types/request": "^2.48.1",
     "eslint-plugin-typescript": "^0.14.0",
     "jest": "^24.4.0",

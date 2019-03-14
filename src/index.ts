@@ -12,7 +12,7 @@ export = (app: Application) => {
         const issue = context.issue();
         const pattern = await readPatternFile(context);
 
-        const allFiles = await context.github.pullRequests.listFiles(issue);
+        const allFiles = await context.github.pulls.listFiles(issue);
         for (const file of allFiles.data) {
 
             const fileSource = getSource(file.filename);
