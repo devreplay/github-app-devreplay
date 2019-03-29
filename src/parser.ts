@@ -11,6 +11,7 @@ const grammarPaths: IGrammarPath = {
     "source.js": "./syntaxes/JavaScript.tmLanguage.json",
     "source.python": "./syntaxes/MagicPython.tmLanguage.json",
     "source.ts": "./syntaxes/TypeScript.tmLanguage.json",
+    "source.cpp": "./syntaxes/cpp.tmLanguage.json",
 };
 
 const registry = new vsctm.Registry({

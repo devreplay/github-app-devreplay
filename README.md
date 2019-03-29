@@ -73,6 +73,7 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 * Python (Supported: default pattern is based on google and Microsoft)
 * Java (TODO)
 * Javascript (TODO)
+* C++ (TODO)
 
 ## Pattern Detection
 

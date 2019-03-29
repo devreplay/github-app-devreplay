@@ -11,18 +11,23 @@ export const sources: ISource[] = [
         source: "source.js",
     },
     {
-        extensions: [ ".py", ".rpy", ".pyw", ".cpy", ".gyp", ".gypi", ".snakefile", ".smk"],
+        extensions: [".py", ".rpy", ".pyw", ".cpy", ".gyp", ".gypi", ".snakefile", ".smk"],
         path: "./syntaxes/MagicPython.tmLanguage.json",
         source: "source.python",
     },
     {
-        extensions: [ ".java", ".jav"],
+        extensions: [".java", ".jav"],
         path: "./syntaxes/java.tmLanguage.json",
         source: "source.java",
     },
     {
-        extensions: [ ".ts"],
+        extensions: [".ts"],
         path: "./syntaxes/TypeScript.tmLanguage.json",
         source: "source.ts",
+    },
+    {
+        extensions: [".cpp", ".cc", ".cxx", ".hpp", ".hh", ".hxx", ".h", ".ino", ".inl", ".ipp"],
+        path: "./syntaxes/cpp.tmLanguage.json",
+        source: "source.cpp",
     },
 ];
