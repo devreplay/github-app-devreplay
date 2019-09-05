@@ -1,128 +1,641 @@
-[  
-    {
-      "number": 959,
-      "sha": "4ec3452d9524726297c0aeb92933a79296345e7e",
-      "author": "yaroslavvb",
-      "participant": "panyx0718",
-      "created_at": "2017-01-26 22:07:26",
-      "merged_at": "2017-01-26 22:22:58",
-      "merged_by": "panyx0718",
-      "file_path": "resnet/resnet_main.py",
-      "condition": [
-        "for $0 in xrange($1.$2):"
-      ],
-      "consequent": [
-        "import six",
-        "\tfor $0 in six.moves.range($1.$2):"
-      ],
-      "identifiers": {
-        "condition": [
-          "xrange"
-        ],
-        "consequent": [
-          "range",
-          "moves",
-          "six"
-        ]
-      },
-      "adoptable_files": [
-        "research/gan/stargan_estimator/train.py",
-        "research/learning_unsupervised_learning/meta_objective/linear_regression.py",
-        "research/fivo/experimental/bounds.py",
-        "research/syntaxnet/dragnn/python/runtime_support.py",
-        "research/fivo/fivo/models/ghmm_test.py",
-        "research/seq2species/build_model.py",
-        "research/autoaugment/helper_utils.py",
-        "research/fivo/experimental/train.py",
-        "research/learning_unsupervised_learning/utils.py",
-        "research/rebar/rebar.py",
-        "research/learning_unsupervised_learning/summary_utils.py",
-        "research/autoaugment/train_cifar.py",
-        "research/fivo/experimental/summary_utils.py",
-        "research/syntaxnet/dragnn/python/network_units.py",
-        "research/seq2species/test_utils.py",
-        "research/syntaxnet/dragnn/python/spec_builder.py",
-        "research/fivo/fivo/data/datasets.py",
-        "research/cognitive_planning/envs/active_vision_dataset_env.py",
-        "research/fivo/experimental/data.py",
-        "research/cognitive_planning/embedders.py",
-        "research/syntaxnet/dragnn/python/graph_builder_test.py",
-        "research/fivo/experimental/models.py",
-        "research/syntaxnet/dragnn/python/trainer_lib.py",
-        "research/rebar/rebar_train.py",
-        "research/learning_unsupervised_learning/meta_objective/utils.py"
-      ],
-      "#condition_files": 25,
-      "#consequent_files": 155,
-      "consequent/condition": 6.2,
-      "frequency": 0,
-      "repeated_pr_id": []
-    },
-    {
-      "number": 1869,
-      "sha": "545b75f9e221d84f4470df657493dd63c92f6c6a",
-      "author": "tmattio",
-      "participant": "derekjchow",
-      "created_at": "2017-07-06 06:38:12",
-      "merged_at": "2017-07-07 22:40:21",
-      "merged_by": "derekjchow",
-      "file_path": "object_detection/utils/visualization_utils.py",
-      "condition": [
-        "import six \n",
-        " \tfor $0, $1 in six.iteritems($2): "
-      ],
-      "consequent": [
-        "for $0, $1 in $2.items():"
-      ],
-      "identifiers": {
-        "condition": [
-          "iteritems",
-          "six"
-        ],
-        "consequent": [
-          "items"
-        ]
-      },
-      "adoptable_files": [
-        "research/deeplab/core/xception_test.py",
-        "research/object_detection/utils/vrd_evaluation.py",
-        "research/domain_adaptation/domain_separation/dsn_eval.py",
-        "research/deeplab/evaluation/eval_coco_format.py",
-        "research/object_detection/eval_util_test.py",
-        "research/ptn/model_ptn.py",
-        "research/swivel/prep.py",
-        "research/brain_coder/single_task/tune.py",
-        "official/transformer/utils/metrics.py",
-        "official/transformer/utils/tokenizer.py",
-        "research/ptn/model_rotator.py",
-        "research/object_detection/utils/visualization_utils_test.py",
-        "research/maskgan/model_utils/n_gram.py",
-        "research/deeplab/train.py",
-        "tutorials/image/cifar10_estimator/cifar10_main.py",
-        "research/adversarial_text/gen_vocab.py",
-        "research/deeplab/evaluation/test_utils.py",
-        "research/deeplab/evaluation/parsing_covering.py",
-        "research/brain_coder/single_task/results_lib_test.py",
-        "research/learned_optimizer/metaopt.py",
-        "research/tcn/utils/util.py",
-        "research/swivel/glove_to_shards.py",
-        "official/transformer/data_download.py",
-        "research/feelvos/utils/train_utils.py",
-        "research/feelvos/train.py",
-        "research/deeplab/utils/train_utils.py",
-        "research/maskgan/train_mask_gan.py",
-        "official/bert/modeling.py",
-        "official/bert/squad_lib.py",
-        "research/object_detection/utils/object_detection_evaluation_test.py",
-        "tutorials/image/cifar10_estimator/cifar10_utils.py",
-        "research/brain_coder/single_task/pg_agent_test.py",
-        "research/maskgan/generate_samples.py",
-        "research/deeplab/evaluation/panoptic_quality.py"
-      ],
-      "#condition_files": 34,
-      "#consequent_files": 178,
-      "consequent/condition": 5.235294117647059,
-      "frequency": 0,
-      "repeated_pr_id": []
-    }
-  ]
+[
+  {
+    "repository": "behaviorbot/request-info",
+    "sha": "https://github.com/behaviorbot/request-info/commit/e35d1264af06fff9acbad51eda17b1c64c95d85d",
+    "author": "shui91",
+    "created_at": "2018-10-11 13:26:39",
+    "condition": [
+      "${0:Identifier} robot"
+    ],
+    "consequent": [
+      "${0:Identifier} app"
+    ],
+    "popularity": 0.9705882352941176,
+    "unchanged_files": [
+      "release-drafter/test/index.test.js"
+    ]
+  },
+  {
+    "repository": "wip/app",
+    "sha": "https://github.com/wip/app/commit/08a037f5f9d7e0c7c599398ad433233c9854ea2d",
+    "author": "Gregor",
+    "created_at": "2019-06-01 14:24:20",
+    "condition": [
+      "plan,"
+    ],
+    "consequent": [
+      "app,"
+    ],
+    "popularity": 0.9411764705882353,
+    "unchanged_files": [
+      "app/lib/logs/get-child.js"
+    ]
+  },
+  {
+    "repository": "toolmantim/release-drafter",
+    "sha": "https://github.com/toolmantim/release-drafter/commit/81a460471fdd9a52ae282be1dea46845f3c4ba41",
+    "author": "Tim Lucas",
+    "created_at": "2018-12-21 07:59:02",
+    "condition": [
+      "${0:Identifier}.forEach((${1:Identifier}) => {"
+    ],
+    "consequent": [
+      "${0:Identifier}.forEach(${1:Identifier} => {"
+    ],
+    "popularity": 0.9,
+    "unchanged_files": [
+      "pull/test/schema.test.js"
+    ]
+  },
+  {
+    "repository": "all-contributors/all-contributors-bot",
+    "sha": "https://github.com/all-contributors/all-contributors-bot/commit/d42ef59757cdf6d090887a9746e6d4ee2b1f8ebe",
+    "author": "Jake Bolam",
+    "created_at": "2019-01-09 11:12:09",
+    "condition": [
+      "content,"
+    ],
+    "consequent": [
+      "context,"
+    ],
+    "popularity": 0.8823529411764706,
+    "unchanged_files": [
+      "request-info/lib/PullRequestBodyChecker.js",
+      "pull/lib/router.js",
+      "all-contributors-bot/src/tasks/processIssueComment/ContentFiles/index.js",
+      "all-contributors-bot/src/tasks/processIssueComment/Repository/index.js"
+    ]
+  },
+  {
+    "repository": "wei/pull",
+    "sha": "https://github.com/wei/pull/commit/d68c8b2b3ac872d3308a737a6b5daed25090b667",
+    "author": "Wei He",
+    "created_at": "2018-12-17 06:59:12",
+    "condition": [
+      "edit: ${0:Identifier}.fn()"
+    ],
+    "consequent": [
+      "update: ${0:Identifier}.fn()"
+    ],
+    "popularity": 0.75,
+    "unchanged_files": [
+      "settings/test/lib/plugins/repository.test.js"
+    ]
+  },
+  {
+    "repository": "wei/pull",
+    "sha": "https://github.com/wei/pull/commit/527d5440d554cab570cbb0a88e2643d22330376d",
+    "author": "Wei He",
+    "created_at": "2019-04-09 11:56:38",
+    "condition": [
+      "${0:Identifier}.pullRequests.${1:Identifier}"
+    ],
+    "consequent": [
+      "${0:Identifier}.pulls.${1:Identifier}"
+    ],
+    "popularity": 0.7272727272727273,
+    "unchanged_files": [
+      "app/lib/pro/get-status.js",
+      "app/test/integration/pro-plan-test.js",
+      "semantic-pull-requests/lib/handle-pull-request-change.js"
+    ]
+  },
+  {
+    "repository": "toolmantim/release-drafter",
+    "sha": "https://github.com/toolmantim/release-drafter/commit/083d6ec0d93c1e7268f76ed1094031ce22a17cd2",
+    "author": "Timon van Spronsen",
+    "created_at": "2019-03-20 17:42:03",
+    "condition": [
+      "${0:Identifier} app.receive({"
+    ],
+    "consequent": [
+      "${0:Identifier} probot.receive({"
+    ],
+    "popularity": 0.7142857142857143,
+    "unchanged_files": [
+      "todo/tests/push-handler.test.js",
+      "todo/tests/pull-request-merge-handler.test.js"
+    ]
+  },
+  {
+    "repository": "wei/pull",
+    "sha": "https://github.com/wei/pull/commit/d041bb54d2426164cd071ca5ea8791df677ce6bf",
+    "author": "Wei He",
+    "created_at": "2019-01-14 06:15:33",
+    "condition": [
+      "} catch (err) {"
+    ],
+    "consequent": [
+      "} catch (e) {"
+    ],
+    "popularity": 0.7,
+    "unchanged_files": [
+      "request-info/index.js",
+      "request-info/lib/IssueBodyChecker.js",
+      "todo/tests/lib/main-loop.test.js"
+    ]
+  },
+  {
+    "repository": "wei/pull",
+    "sha": "https://github.com/wei/pull/commit/6c88502ac3a08bac5aa6cf104b58c6fe860a0e6b",
+    "author": "Wei He",
+    "created_at": "2019-07-27 13:38:00",
+    "condition": [
+      "expect(${0:Identifier}.${1:Identifier}.${2:Identifier}).not.toHaveBeenCalled()"
+    ],
+    "consequent": [
+      "expect(${0:Identifier}.${1:Identifier}.${2:Identifier}).toHaveBeenCalledTimes(1)"
+    ],
+    "popularity": 0.6666666666666666,
+    "unchanged_files": [
+      "settings/test/lib/plugins/branches.test.js",
+      "todo/tests/issue-rename-handler.test.js"
+    ]
+  },
+  {
+    "repository": "wei/pull",
+    "sha": "https://github.com/wei/pull/commit/527d5440d554cab570cbb0a88e2643d22330376d",
+    "author": "Wei He",
+    "created_at": "2019-04-09 11:56:38",
+    "condition": [
+      "pullRequests: {"
+    ],
+    "consequent": [
+      "pulls: {"
+    ],
+    "popularity": 0.6666666666666666,
+    "unchanged_files": [
+      "app/test/integration/legacy-test.js",
+      "app/test/integration/pro-plan-test.js"
+    ]
+  },
+  {
+    "repository": "all-contributors/all-contributors-bot",
+    "sha": "https://github.com/all-contributors/all-contributors-bot/commit/d8a2bef3fc61f06edffb994981165477c51244de",
+    "author": "Jake Bolam",
+    "created_at": "2019-01-10 00:00:30",
+    "condition": [
+      "${0:Identifier}.debug(${1:Identifier})"
+    ],
+    "consequent": [
+      "${0:Identifier}.log(${1:Identifier})"
+    ],
+    "popularity": 0.6666666666666666,
+    "unchanged_files": [
+      "all-contributors-bot/src/tasks/processIssueComment/Repository/index.js"
+    ]
+  },
+  {
+    "repository": "JasonEtco/todo",
+    "sha": "https://github.com/JasonEtco/todo/commit/82dd000715c68c4dc2c2e20212479b23a461dbf4",
+    "author": "Jason Etcovitch",
+    "created_at": "2018-11-20 00:07:41",
+    "condition": [
+      "files"
+    ],
+    "consequent": [
+      "diff"
+    ],
+    "popularity": 0.6428571428571429,
+    "unchanged_files": [
+      "pull/lib/helper.js",
+      "all-contributors-bot/test/tasks/processIssueComment/OptionsConfig/index.test.js",
+      "all-contributors-bot/test/tasks/processIssueComment/Repository/index.test.js",
+      "all-contributors-bot/src/tasks/processIssueComment/OptionsConfig/index.js",
+      "settings/test/index.test.js",
+      "all-contributors-bot/src/tasks/processIssueComment/probot-processIssueComment.js",
+      "todo/lib/utils/config-schema.js",
+      "all-contributors-bot/src/tasks/processIssueComment/Repository/index.js",
+      "todo/tests/lib/should-exclude-file.test.js",
+      "all-contributors-bot/src/tasks/processIssueComment/ContentFiles/index.js"
+    ]
+  },
+  {
+    "repository": "wip/app",
+    "sha": "https://github.com/wip/app/commit/d91e3104f03d706d567d3f787dd97095066dc8e3",
+    "author": "Gregor",
+    "created_at": "2018-12-03 15:11:59",
+    "condition": [
+      "${0:Identifier}.info(${1:Identifier})"
+    ],
+    "consequent": [
+      "${0:Identifier}.info(getDuration(timeStart), ${1:Identifier})"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "all-contributors-bot/src/tasks/processIssueComment/probot-processIssueComment.js"
+    ]
+  },
+  {
+    "repository": "wip/app",
+    "sha": "https://github.com/wip/app/commit/5c941aae23582f285860059c65507bff5530a48a",
+    "author": "Gregor",
+    "created_at": "2018-12-01 16:08:48",
+    "condition": [
+      "const yaml = require('js-yaml')"
+    ],
+    "consequent": [
+      "const probotConfig = require('probot-config')",
+      ""
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "pull/lib/router.js"
+    ]
+  },
+  {
+    "repository": "wip/app",
+    "sha": "https://github.com/wip/app/commit/3e1285ff7f25f7c1429fcac7e4d6bfb5a9114373",
+    "author": "Gregor",
+    "created_at": "2018-10-13 13:02:58",
+    "condition": [
+      "${0:Identifier}.${1:Identifier} = probotPlugin"
+    ],
+    "consequent": [
+      "${0:Identifier}.${1:Identifier} = wip"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "semantic-pull-requests/index.js"
+    ]
+  },
+  {
+    "repository": "wei/pull",
+    "sha": "https://github.com/wei/pull/commit/ec11f4a5cec98c491ca5e4402411b23ae9e553d8",
+    "author": "Wei He",
+    "created_at": "2019-04-30 00:05:49",
+    "condition": [
+      "${0:Identifier} function forRepository (${1:Identifier}) {"
+    ],
+    "consequent": [
+      "${0:Identifier} function forRepository (${1:Identifier}, opts = {}) {"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "stale/index.js"
+    ]
+  },
+  {
+    "repository": "wei/pull",
+    "sha": "https://github.com/wei/pull/commit/d68c8b2b3ac872d3308a737a6b5daed25090b667",
+    "author": "Wei He",
+    "created_at": "2018-12-17 06:59:12",
+    "condition": [
+      "${0:Identifier} this.${1:Identifier}.${2:Identifier}.edit({"
+    ],
+    "consequent": [
+      "${0:Identifier} this.${1:Identifier}.${2:Identifier}.update({"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "stale/lib/stale.js"
+    ]
+  },
+  {
+    "repository": "wei/pull",
+    "sha": "https://github.com/wei/pull/commit/1c33c17e83e282114690383b971b61da77134662",
+    "author": "Wei He",
+    "created_at": "2018-12-17 05:30:29",
+    "condition": [
+      "${0:Identifier}.forEach(([${1:Identifier}, message]) => {"
+    ],
+    "consequent": [
+      "${0:Identifier}.forEach((${1:Identifier}) => {"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "stale/test/schema.test.js"
+    ]
+  },
+  {
+    "repository": "behaviorbot/request-info",
+    "sha": "https://github.com/behaviorbot/request-info/commit/af149d9e681c2cdb52013aff1e966fedfcf993fe",
+    "author": "Jason Etcovitch",
+    "created_at": "2018-10-10 14:16:51",
+    "condition": [
+      "expect(${0:Identifier}.${1:Identifier}.create).toHaveBeenCalled()"
+    ],
+    "consequent": [
+      "expect(${0:Identifier}.${1:Identifier}.createComment).toHaveBeenCalled()"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "pull/test/pull.test.js"
+    ]
+  },
+  {
+    "repository": "toolmantim/release-drafter",
+    "sha": "https://github.com/toolmantim/release-drafter/commit/b3125380a228868b130eb0e1829479470b34026d",
+    "author": "Timon van Spronsen",
+    "created_at": "2019-03-19 17:58:21",
+    "condition": [
+      "${0:Identifier}.${1:Identifier}.${2:Identifier}.getCommits("
+    ],
+    "consequent": [
+      "${0:Identifier}.${1:Identifier}.${2:Identifier}.listCommits("
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "semantic-pull-requests/lib/handle-pull-request-change.js"
+    ]
+  },
+  {
+    "repository": "JasonEtco/todo",
+    "sha": "https://github.com/JasonEtco/todo/commit/07d9f1f25e24ced4efddb2037d6ac539c3f54185",
+    "author": "Jason Etcovitch",
+    "created_at": "2018-12-05 10:44:46",
+    "condition": [
+      "const defaultConfig = require('./default-config')"
+    ],
+    "consequent": [
+      "const configSchema = require('./config-schema')"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "app/lib/pro/get-config.js"
+    ]
+  },
+  {
+    "repository": "JasonEtco/todo",
+    "sha": "https://github.com/JasonEtco/todo/commit/59c92fbc74fec4f9a54aca638eb5bf6f4b4d21a1",
+    "author": "Jason Etcovitch",
+    "created_at": "2018-11-19 07:26:06",
+    "condition": [
+      "files"
+    ],
+    "consequent": [
+      "title,"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "pull/lib/helper.js",
+      "all-contributors-bot/test/tasks/processIssueComment/OptionsConfig/index.test.js",
+      "all-contributors-bot/test/tasks/processIssueComment/Repository/index.test.js",
+      "all-contributors-bot/src/tasks/processIssueComment/OptionsConfig/index.js",
+      "settings/test/index.test.js",
+      "all-contributors-bot/src/tasks/processIssueComment/probot-processIssueComment.js",
+      "todo/lib/utils/config-schema.js",
+      "todo/tests/lib/should-exclude-file.test.js",
+      "all-contributors-bot/src/tasks/processIssueComment/ContentFiles/index.js"
+    ]
+  },
+  {
+    "repository": "all-contributors/all-contributors-bot",
+    "sha": "https://github.com/all-contributors/all-contributors-bot/commit/d21963b97c07229e7739af72b67ea883556b01a2",
+    "author": "Jake Bolam",
+    "created_at": "2019-03-23 04:42:31",
+    "condition": [
+      "${0:Identifier}.${1:Identifier}.${2:Identifier} = async (${3:Identifier}, ${4:Identifier}) => {"
+    ],
+    "consequent": [
+      "${0:Identifier}.${1:Identifier}.${2:Identifier} = thundra(async (${3:Identifier}, ${4:Identifier}) => {"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "all-contributors-bot/src/serverless-health-check.js",
+      "all-contributors-bot/src/tasks/stats/serverless-stats.js"
+    ]
+  },
+  {
+    "repository": "all-contributors/all-contributors-bot",
+    "sha": "https://github.com/all-contributors/all-contributors-bot/commit/2e9c115807d8a29e42bc4ac70723ec6583776d62",
+    "author": "Jake Bolam",
+    "created_at": "2019-01-16 01:44:43",
+    "condition": [
+      "test(`Add's new contributor`, async () => {"
+    ],
+    "consequent": [
+      "test(`Add's new contributor`, () => {"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "all-contributors-bot/test/tasks/processIssueComment/OptionsConfig/index.test.js"
+    ]
+  },
+  {
+    "repository": "all-contributors/all-contributors-bot",
+    "sha": "https://github.com/all-contributors/all-contributors-bot/commit/2e9c115807d8a29e42bc4ac70723ec6583776d62",
+    "author": "Jake Bolam",
+    "created_at": "2019-01-16 01:44:43",
+    "condition": [
+      "if (${0:Identifier} instanceof ResourceNotFoundError) {"
+    ],
+    "consequent": [
+      "if (${0:Identifier} instanceof SyntaxError) {"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "all-contributors-bot/src/tasks/processIssueComment/probot-processIssueComment.js"
+    ]
+  },
+  {
+    "repository": "all-contributors/all-contributors-bot",
+    "sha": "https://github.com/all-contributors/all-contributors-bot/commit/6abf6e434870e1a48b9fcf35ba0a56e381818752",
+    "author": "Jake Bolam",
+    "created_at": "2019-01-11 01:09:11",
+    "condition": [
+      "${0:Identifier}.forEach(({ ${1:Identifier}, ${2:Identifier} }) => {"
+    ],
+    "consequent": [
+      "${0:Identifier}.forEach(({ ${1:Identifier}, ${2:Identifier}, sha }) => {"
+    ],
+    "popularity": 0.5,
+    "unchanged_files": [
+      "release-drafter/lib/template.js"
+    ]
+  },
+  {
+    "repository": "wei/pull",
+    "sha": "https://github.com/wei/pull/commit/6c88502ac3a08bac5aa6cf104b58c6fe860a0e6b",
+    "author": "Wei He",
+    "created_at": "2019-07-27 13:38:00",
+    "condition": [
+      "expect(${0:Identifier}.${1:Identifier}.${2:Identifier}).not.toHaveBeenCalled()"
+    ],
+    "consequent": [
+      "expect(${0:Identifier}.${1:Identifier}.${2:Identifier}).toHaveBeenCalledTimes(2)"
+    ],
+    "popularity": 0.42857142857142855,
+    "unchanged_files": [
+      "todo/tests/push-handler.test.js",
+      "todo/tests/pull-request-merge-handler.test.js",
+      "todo/tests/issue-rename-handler.test.js",
+      "todo/tests/pull-request-handler.test.js"
+    ]
+  },
+  {
+    "repository": "wip/app",
+    "sha": "https://github.com/wip/app/commit/f7482eda54e31e03a72f398335ac389235347d54",
+    "author": "Gregor",
+    "created_at": "2018-12-01 16:32:50",
+    "condition": [
+      "const log = context.log.child({"
+    ],
+    "consequent": [
+      "const options = {"
+    ],
+    "popularity": 0.4,
+    "unchanged_files": [
+      "app/lib/handle-marketplace-purchase.js",
+      "app/lib/handle-installation.js",
+      "app/lib/legacy/handle-pull-request-change.js"
+    ]
+  },
+  {
+    "repository": "wei/pull",
+    "sha": "https://github.com/wei/pull/commit/d041bb54d2426164cd071ca5ea8791df677ce6bf",
+    "author": "Wei He",
+    "created_at": "2019-01-14 06:15:33",
+    "condition": [
+      "} catch (error) {"
+    ],
+    "consequent": [
+      "} catch (e) {"
+    ],
+    "popularity": 0.375,
+    "unchanged_files": [
+      "all-contributors-bot/src/tasks/processIssueComment/utils/getUserDetails.js",
+      "app/lib/get-plan.js",
+      "app/test/unit/get-plan-test.js",
+      "all-contributors-bot/src/tasks/processIssueComment/OptionsConfig/index.js",
+      "release-drafter/lib/releases.js",
+      "app/lib/legacy/handle-pull-request-change.js",
+      "all-contributors-bot/src/tasks/processIssueComment/probot-processIssueComment.js",
+      "all-contributors-bot/src/tasks/processIssueComment/Repository/index.js",
+      "app/test/unit/get-config-test.js",
+      "stale/index.js"
+    ]
+  },
+  {
+    "repository": "wip/app",
+    "sha": "https://github.com/wip/app/commit/669407dcef96ae12227e4e5d0308d335eb6ca052",
+    "author": "Gregor",
+    "created_at": "2019-06-01 05:33:31",
+    "condition": [
+      "${0:Identifier} this.${1:Identifier}.receive(require('./events/new-pull-request-with-wip-title.json'))"
+    ],
+    "consequent": [
+      "${0:Identifier} this.${1:Identifier}.receive(require('./events/new-pull-request-with-test-title-from-user.json'))"
+    ],
+    "popularity": 0.3333333333333333,
+    "unchanged_files": [
+      "app/test/integration/pro-plan-test.js",
+      "app/test/integration/free-plan-test.js"
+    ]
+  },
+  {
+    "repository": "wip/app",
+    "sha": "https://github.com/wip/app/commit/669407dcef96ae12227e4e5d0308d335eb6ca052",
+    "author": "Gregor",
+    "created_at": "2019-06-01 05:33:31",
+    "condition": [
+      "test('new pull request with \"[WIP] Test\" title', ${0:Identifier} function (${1:Identifier}) {"
+    ],
+    "consequent": [
+      "test('new pull request with \"Test\" title from user', ${0:Identifier} function (${1:Identifier}) {"
+    ],
+    "popularity": 0.3333333333333333,
+    "unchanged_files": [
+      "app/test/integration/pro-plan-test.js",
+      "app/test/integration/free-plan-test.js"
+    ]
+  },
+  {
+    "repository": "JasonEtco/todo",
+    "sha": "https://github.com/JasonEtco/todo/commit/49cd8759075a4bb984931b877dccbd8dc35bff62",
+    "author": "Jason Etcovitch",
+    "created_at": "2019-03-18 12:48:06",
+    "condition": [
+      "const ${0:Identifier} = require('@octokit/rest')"
+    ],
+    "consequent": [
+      "const { ${0:Identifier} } = require('probot/lib/github')"
+    ],
+    "popularity": 0.3333333333333333,
+    "unchanged_files": [
+      "all-contributors-bot/test/mocks/mockGithub.js",
+      "semantic-pull-requests/__tests__/handle-pull-request-change.js"
+    ]
+  },
+  {
+    "repository": "all-contributors/all-contributors-bot",
+    "sha": "https://github.com/all-contributors/all-contributors-bot/commit/4cf43804a6a0f12452bd40abcc51607dadcc1ade",
+    "author": "Kyle Martin",
+    "created_at": "2019-08-06 06:35:19",
+    "condition": [
+      "module.exports.${0:Identifier} = thundra(async (${1:Identifier}, ${2:Identifier}) => {"
+    ],
+    "consequent": [
+      "const ${0:Identifier} = thundra(async (${1:Identifier}, ${2:Identifier}) => {"
+    ],
+    "popularity": 0.3333333333333333,
+    "unchanged_files": [
+      "all-contributors-bot/src/tasks/stats/serverless-stats-worker.js",
+      "all-contributors-bot/src/tasks/processIssueComment/serverless-task.js"
+    ]
+  },
+  {
+    "repository": "probot/settings",
+    "sha": "https://github.com/probot/settings/commit/8318a0ae294ac14560bf46edf7b5b4b9ffe6e56b",
+    "author": "Samuel Parkinson",
+    "created_at": "2018-10-19 20:34:05",
+    "condition": [
+      "expect(${0:Identifier}.${1:Identifier}.${2:Identifier}).toHaveBeenCalledTimes(2)"
+    ],
+    "consequent": [
+      "expect(${0:Identifier}.${1:Identifier}.${2:Identifier}).toHaveBeenCalledTimes(3)"
+    ],
+    "popularity": 0.2,
+    "unchanged_files": [
+      "settings/test/lib/plugins/milestones.test.js",
+      "settings/test/lib/plugins/branches.test.js",
+      "settings/test/lib/plugins/teams.test.js",
+      "settings/test/lib/plugins/collaborators.test.js"
+    ]
+  },
+  {
+    "repository": "toolmantim/release-drafter",
+    "sha": "https://github.com/toolmantim/release-drafter/commit/083d6ec0d93c1e7268f76ed1094031ce22a17cd2",
+    "author": "Timon van Spronsen",
+    "created_at": "2019-03-20 17:42:03",
+    "condition": [
+      "app.auth = () => Promise.resolve(github)"
+    ],
+    "consequent": [
+      "const cert = `-----BEGIN RSA PRIVATE KEY-----",
+      "MIICXQIBAAKBgQC2RTg7dNjQMwPzFwF0gXFRCcRHha4H24PeK7ey6Ij39ay1hy2o",
+      "H9NEZOxrmAb0bEBDuECImTsJdpgI6F3OwkJGsOkIH09xTk5tC4fkfY8N7LklK+uM",
+      "ndN4+VUXTPSj/U8lQtCd9JnnUL/wXDc46wRJ0AAKsQtUw5n4e44f+aYggwIDAQAB",
+      "AoGAW2/cJs+WWNPO3msjGrw5CYtZwPuJ830m6RSLYiAPXj0LuEEpIVdd18i9Zbht",
+      "fL61eoN7NEuSd0vcN1PCg4+mSRAb/LoauSO3HXote+6Lhg+y5mVYTNkE0ZAW1zUb",
+      "HOelQp9M6Ia/iQFIMykhrNLqMG9xQIdLH8BDGuqTE+Eh8jkCQQDyR6qfowD64H09",
+      "oYJI+QbsE7yDOnG68tG7g9h68Mp089YuQ43lktz0q3fhC7BhBuSnfkBHwMztABuA",
+      "Ow1+dP9FAkEAwJeYJYxJN9ron24IePDoZkL0T0faIWIX2htZH7kJODs14OP+YMVO",
+      "1CPShdTIgFeVp/HlAY2Qqk/do2fzyueZJwJBAN5GvdUjmRyRpJVMfdkxDxa7rLHA",
+      "huL7L0wX1B5Gl5fgtVlQhPhgWvLl9V+0d6csyc6Y16R80AWHmbN1ehXQhPkCQGfF",
+      "RsV0gT8HRLAiqY4AwDfZe6n8HRw/rnpmoe7l1IHn5W/3aOjbZ04Gvzg9HouIpaqI",
+      "O8xKathZkCKrsEBz6aECQQCLgqOCJz4MGIVHP4vQHgYp8YNZ+RMSfJfZA9AyAsgP",
+      "Pc6zWtW2XuNIGHw9pDj7v1yDolm7feBXLg8/u9APwHDy",
+      "-----END RSA PRIVATE KEY-----`",
+      "",
+      "describe('release-drafter', () => {",
+      "  let probot",
+      "",
+      "  beforeEach(() => {",
+      "    probot = new Probot({ id: 179208, cert, Octokit })",
+      "    probot.load(releaseDrafter)",
+      "",
+      "    nock('https://api.github.com')",
+      "      .post('/app/installations/179208/access_tokens')",
+      "      .reply(200, { token: 'test' })"
+    ],
+    "popularity": 0.16666666666666666,
+    "unchanged_files": [
+      "stale/test/stale.test.js",
+      "pull/test/pull.test.js",
+      "todo/tests/helpers.js",
+      "settings/test/index.test.js",
+      "request-info/test/index.js"
+    ]
+  }
+]
