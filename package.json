@@ -1,12 +1,12 @@
 {
-  "name": "review-uniquer",
+  "name": "dev-avatar",
   "version": "1.0.1",
-  "description": "Review Uniquer suggests code fix ways that already fixed by human reviewers in past.",
+  "description": "Dev Avatar suggests code fix ways that already fixed by human reviewers in past.",
   "author": "Yuki Ueda <ueda.yuki.un7@is.naist.jp> (http://ikuyadeu.github.io/)",
   "license": "ISC",
-  "repository": "https://github.com/Ikuyadeu/review-uniquer.git",
-  "homepage": "https://github.com/Ikuyadeu/review-uniquer",
-  "bugs": "https://github.com/Ikuyadeu/review-uniquer/issues",
+  "repository": "https://github.com/Ikuyadeu/dev-avatar.git",
+  "homepage": "https://github.com/Ikuyadeu/dev-avatar",
+  "bugs": "https://github.com/Ikuyadeu/dev-avatar/issues",
   "keywords": [
     "probot",
     "github",

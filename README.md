@@ -9,8 +9,8 @@ Dev Avatar suggests code fix ways that already fixed by human reviewers in past.
 
 ## Usage
 
-1. Install this app from https://github.com/apps/review-uniquer
-2. 2. Create your own programming style(`devreplay.json`) on the root like bellow
+1. Install this app from https://github.com/apps/dev-avatar
+2. Create your own programming style(`devreplay.json`) on the root like bellow
 (**Recommend**) [Review Pattern Generator](https://github.com/Ikuyadeu/review_pattern_gen) can generate your rule file automatically
 ```json
 [
@@ -33,7 +33,7 @@ for a in xrange(array.x):
     pass
 ```
 3. The developer(you) submits a pull request
-4. This bot suggests source code changes based on pattern(If you does not have `pattern.json`, bot suggest based on [google and Microsoft pattern](https://github.com/Ikuyadeu/review-uniquer/blob/master/package.json)).
+4. This bot suggests source code changes based on pattern.
 
 ## Contributing
 
@@ -74,10 +74,6 @@ Please use pattern detector.
 
 https://github.com/Ikuyadeu/review_pattern_gen
 
-
-More detail algorythm is based on
-
-Yuki Ueda, Takashi Ishio, Akinori Ihara, and Kenichi Matsumoto, “Mining Source Code Improvement Patterns from Similar Code Review Works”, In Proc. 13th International Workshop on Software Clones (IWSC’19), 2019 Peoples’ Choice Award [paper](https://ikuyadeu.github.io/papers/IWSC2019.pdf) : [slide](https://www.slideshare.net/YukiUeda4/mining-source-code-improvement-patterns-from-similar-code-review-works-133818790)
 
 ## Thanks
 
