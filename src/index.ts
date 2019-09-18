@@ -14,7 +14,7 @@ export = (app: Application) => {
         const allFiles = await context.github.pulls.listFiles(issue);
         for (const file of allFiles.data) {
             const fileContent = await context.github.repos.getContents(
-                await context.repo({path: file.filename, ref: pulls.data.head.ref}));
+                context.repo({ path: file.filename, ref: pulls.data.head.ref }));
             const fileContentStr = Buffer.from(fileContent.data.content, "base64").toString();
 
             const results = await fixWithPattern(file.filename, fileContentStr, pattern);
@@ -39,7 +39,7 @@ export = (app: Application) => {
 async function readPatternFile(context: Context) {
     let pattern: string;
     try {
-        const options = await context.github.repos.getContents(await context.repo({path: "devreplay.json"}));
+        const options = await context.github.repos.getContents(context.repo({path: "devreplay.json"}));
         pattern = Buffer.from(options.data.content, "base64").toString();
     } catch (err) {
         return readFileSync("./devreplay.json").toString();
