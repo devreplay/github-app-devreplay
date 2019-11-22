@@ -41,7 +41,7 @@
     "ts-jest": "^24.0.0"
   },
   "engines": {
-    "node": ">= 10.15.0"
+    "node": "10.16.3"
   },
   "standard": {
     "parser": "typescript-eslint-parser",
