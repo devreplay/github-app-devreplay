@@ -1,5 +1,4 @@
 import { fixWithPattern, ILintOut, IPattern } from "devreplay";
-// import * as diff from "diff";
 import { diffLines } from "diff";
 import { readFileSync } from "fs";
 import { Application, Context } from "probot";
@@ -24,9 +23,10 @@ export = (app: Application) => {
 
                 const out: string[] = [];
                 diff.forEach((part) => {
-                    const symbol =  part.added ? "+" : part.removed ? "-" : " ";
+                    const symbol =  part.added === true ? "+" : part.removed === true ? "-" : " ";
                     const value = part.value.slice(-1) !== "\n" ? part.value : part.value.slice(0, -1);
-                    out.push(`${symbol} ` + value.split(/\r?\n/).join(`\n${symbol} `));
+                    const splitedValue = value.split(/\r?\n/).join(`\n${symbol}`);
+                    out.push(`${symbol}${splitedValue}`);
                   });
                 const params = context.issue({body: formatILintOut(result[1], pulls.data.head.sha, out)});
                 context.github.issues.createComment(params);
@@ -41,12 +41,13 @@ async function readPatternFile(context: Context) {
     try {
         const options = await context.github.repos.getContents(context.repo({path: "devreplay.json"}));
         pattern = Buffer.from(options.data.content, "base64").toString();
-    } catch (err) {
+    } catch (e) {
         return readFileSync("./devreplay.json").toString();
     }
     if (pattern === "") {
         pattern = readFileSync("./devreplay.json").toString();
     }
+
     return pattern;
 }
 

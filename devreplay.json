@@ -32,41 +32,6 @@
     ]
   },
   {
-    "repository": "toolmantim/release-drafter",
-    "sha": "https://github.com/toolmantim/release-drafter/commit/81a460471fdd9a52ae282be1dea46845f3c4ba41",
-    "author": "Tim Lucas",
-    "created_at": "2018-12-21 07:59:02",
-    "condition": [
-      "${0:Identifier}.forEach((${1:Identifier}) => {"
-    ],
-    "consequent": [
-      "${0:Identifier}.forEach(${1:Identifier} => {"
-    ],
-    "popularity": 0.9,
-    "unchanged_files": [
-      "pull/test/schema.test.js"
-    ]
-  },
-  {
-    "repository": "all-contributors/all-contributors-bot",
-    "sha": "https://github.com/all-contributors/all-contributors-bot/commit/d42ef59757cdf6d090887a9746e6d4ee2b1f8ebe",
-    "author": "Jake Bolam",
-    "created_at": "2019-01-09 11:12:09",
-    "condition": [
-      "content,"
-    ],
-    "consequent": [
-      "context,"
-    ],
-    "popularity": 0.8823529411764706,
-    "unchanged_files": [
-      "request-info/lib/PullRequestBodyChecker.js",
-      "pull/lib/router.js",
-      "all-contributors-bot/src/tasks/processIssueComment/ContentFiles/index.js",
-      "all-contributors-bot/src/tasks/processIssueComment/Repository/index.js"
-    ]
-  },
-  {
     "repository": "wei/pull",
     "sha": "https://github.com/wei/pull/commit/d68c8b2b3ac872d3308a737a6b5daed25090b667",
     "author": "Wei He",

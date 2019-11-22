@@ -1,7 +1,7 @@
 {
   "name": "dev-avatar",
   "version": "1.0.1",
-  "description": "Dev Avatar suggests code fix ways that already fixed by human reviewers in past.",
+  "description": "Replay your source code development on code review",
   "author": "Yuki Ueda <ueda.yuki.un7@is.naist.jp> (http://ikuyadeu.github.io/)",
   "license": "ISC",
   "repository": "https://github.com/Ikuyadeu/dev-avatar.git",
@@ -10,7 +10,8 @@
   "keywords": [
     "probot",
     "github",
-    "probot-app"
+    "probot-app",
+    "devreplay"
   ],
   "scripts": {
     "build": "tsc",
@@ -20,11 +21,11 @@
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
-    "probot": "^9.3.3",
+    "probot": "^9.6.6",
     "request": "^2.88.0",
     "diff": "4.0.1",
-    "devreplay": "0.2.5",
-    "typescript": "^3.6.2"
+    "devreplay": "0.3.5",
+    "typescript": "^3.7.2"
   },
   "devDependencies": {
     "@types/diff": "4.0.2",
