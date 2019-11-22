@@ -1506,10 +1506,10 @@ detect-newline@^2.1.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
   integrity sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I=
 
-devreplay@0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/devreplay/-/devreplay-0.3.5.tgz#f6d195bea0fe1b8f54e0d24a1baf879dd295b4da"
-  integrity sha512-g5sIEoO19AkNOofRo3OaW8hFxxEU9cFd1xkpTcvwhZeYDcM98BiwZ1SB+xkOnRHls/emfnrHTbDjHm+0W149rQ==
+devreplay@0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/devreplay/-/devreplay-0.3.7.tgz#8142fa530bbd7f51fee8e510f96a8cc51b97dc15"
+  integrity sha512-jVr4H3l7CjMeO+hZTB3rShtqvfnufY2ve6q/mjthk8a1XuxwOFF1qEJ196pi9LtJPElFhNlQwtHk+ejcJBAf8w==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     builtin-modules "^3.1.0"

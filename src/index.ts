@@ -1,4 +1,4 @@
-import { fixWithPattern, ILintOut, IPattern } from "devreplay";
+import { fixWithPattern, ILintOut, IPattern, lintWithPattern } from "devreplay";
 import { diffLines } from "diff";
 import { readFileSync } from "fs";
 import { Application, Context } from "probot";
@@ -12,14 +12,17 @@ export = (app: Application) => {
         const pulls = await context.github.pulls.get(issue);
         const allFiles = await context.github.pulls.listFiles(issue);
         for (const file of allFiles.data) {
-            const fileContent = await context.github.repos.getContents(
-                context.repo({ path: file.filename, ref: pulls.data.head.ref }));
-            const fileContentStr = Buffer.from(fileContent.data.content, "base64").toString();
+            const fileContent = (await context.github.repos.getContents(
+                context.repo({ path: file.filename, ref: pulls.data.head.ref }))).data as { content?: string };
 
-            const results = await fixWithPattern(file.filename, fileContentStr, pattern);
+            const content = fileContent.content !== undefined ? fileContent.content : "";
+            const fileContentStr = Buffer.from(content, "base64").toString();
+
+            const results = lintWithPattern(file.filename, content, pattern);
 
             for (const result of results) {
-                const diff = diffLines(fileContentStr, result[0]);
+                const fixed = fixWithPattern(fileContentStr, result.pattern);
+                const diff = diffLines(fileContentStr, fixed);
 
                 const out: string[] = [];
                 diff.forEach((part) => {
@@ -28,7 +31,7 @@ export = (app: Application) => {
                     const splitedValue = value.split(/\r?\n/).join(`\n${symbol}`);
                     out.push(`${symbol}${splitedValue}`);
                   });
-                const params = context.issue({body: formatILintOut(result[1], pulls.data.head.sha, out)});
+                const params = context.issue({body: formatILintOut(result, pulls.data.head.sha, out)});
                 context.github.issues.createComment(params);
             }
         }
@@ -39,8 +42,10 @@ export = (app: Application) => {
 async function readPatternFile(context: Context) {
     let pattern: string;
     try {
-        const options = await context.github.repos.getContents(context.repo({path: "devreplay.json"}));
-        pattern = Buffer.from(options.data.content, "base64").toString();
+        const options = (await context.github.repos.getContents(context.repo({path: "devreplay.json"})))
+                        .data as { content?: string };
+        const content = options.content !== undefined ? options.content : "";
+        pattern = Buffer.from(content, "base64").toString();
     } catch (e) {
         return readFileSync("./devreplay.json").toString();
     }
