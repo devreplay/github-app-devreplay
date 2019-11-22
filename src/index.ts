@@ -17,8 +17,7 @@ export = (app: Application) => {
 
             const content = fileContent.content !== undefined ? fileContent.content : "";
             const fileContentStr = Buffer.from(content, "base64").toString();
-
-            const results = lintWithPattern(file.filename, content, pattern);
+            const results = lintWithPattern(file.filename, fileContentStr, pattern);
 
             for (const result of results) {
                 const fixed = fixWithPattern(fileContentStr, result.pattern);
