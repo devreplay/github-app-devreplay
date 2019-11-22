@@ -1,15 +1,15 @@
-# Dev Avatar
+# DevReplay
 
-Dev Avatar suggests code fix ways that already fixed by human reviewers in past.
+DevReplay suggests code fix ways that already fixed by human reviewers in past.
 
 <!-- ![screeenshot](https://raw.githubusercontent.com/Ikuyadeu/review-uniquer/master/img/Usage.gif?token=AH-0wuuMacNCXN86wKQdanxFaQod7FUFks5cMyaDwA%3D%3D) -->
-![screeenshot](https://raw.githubusercontent.com/Ikuyadeu/dev-avatar/master/img/Screenshot.png)
+![screeenshot](https://raw.githubusercontent.com/Ikuyadeu/github-app-devreplay/master/img/Screenshot.png)
 
 * VS Code support is [here](https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.devreplay)
 
 ## Usage
 
-1. Install this app from https://github.com/apps/dev-avatar
+1. Install this app from https://github.com/apps/devreplay
 2. Create your own programming style(`devreplay.json`) on the root like bellow
 (**Recommend**) [Review Pattern Generator](https://github.com/Ikuyadeu/review_pattern_gen) can generate your rule file automatically
 ```json
