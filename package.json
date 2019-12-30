@@ -21,27 +21,27 @@
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
-    "probot": "^9.6.6",
+    "probot": "^9.8.0",
     "request": "^2.88.0",
     "diff": "4.0.1",
-    "devreplay": "0.3.7",
-    "typescript": "^3.7.2"
+    "devreplay": "0.3.8",
+    "typescript": "^3.7.4"
   },
   "devDependencies": {
     "@types/diff": "4.0.2",
     "@types/jest": "^24.0.11",
-    "@types/node": "^12.0.12",
-    "@types/request": "^2.48.1",
+    "@types/node": "^13.1.1",
+    "@types/request": "^2.48.4",
     "eslint-plugin-typescript": "^0.14.0",
-    "jest": "^24.4.0",
-    "jest-cli": "^24.4.0",
-    "nodemon": "^1.18.10",
-    "smee-client": "^1.0.2",
-    "standard": "^12.0.1",
-    "ts-jest": "^24.0.0"
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "nodemon": "^2.0.2",
+    "smee-client": "^1.1.0",
+    "standard": "^14.3.1",
+    "ts-jest": "^24.2.0"
   },
   "engines": {
-    "node": "10.16.3"
+    "node": "12.13.1"
   },
   "standard": {
     "parser": "typescript-eslint-parser",
