@@ -21,6 +21,9 @@ export = (app: Application) => {
 
             for (const result of results) {
                 const fixed = fixWithPattern(fileContentStr, result.pattern);
+                if (fixed === undefined) {
+                    continue;
+                }
                 const diff = diffLines(fileContentStr, fixed);
 
                 const out: string[] = [];
