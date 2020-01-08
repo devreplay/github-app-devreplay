@@ -2,8 +2,7 @@
 
 DevReplay suggests code fix ways that already fixed by human reviewers in past.
 
-<!-- ![screeenshot](https://raw.githubusercontent.com/Ikuyadeu/review-uniquer/master/img/Usage.gif?token=AH-0wuuMacNCXN86wKQdanxFaQod7FUFks5cMyaDwA%3D%3D) -->
-![screeenshot](https://raw.githubusercontent.com/Ikuyadeu/github-app-devreplay/master/img/Screenshot.png)
+![screeenshot](https://raw.githubusercontent.com/devreplay/github-app-devreplay/master/img/Screenshot.png)
 
 * VS Code support is [here](https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.devreplay)
 

@@ -4,9 +4,9 @@
   "description": "Replay your source code development on code review",
   "author": "Yuki Ueda <ueda.yuki.un7@is.naist.jp> (http://ikuyadeu.github.io/)",
   "license": "ISC",
-  "repository": "https://github.com/Ikuyadeu/dev-avatar.git",
-  "homepage": "https://github.com/Ikuyadeu/dev-avatar",
-  "bugs": "https://github.com/Ikuyadeu/dev-avatar/issues",
+  "repository": "https://github.com/devreplay/github-app-devreplay.git",
+  "homepage": "https://github.com/devreplay/github-app-devreplay",
+  "bugs": "https://github.com/devreplay/github-app-devreplay/issues",
   "keywords": [
     "probot",
     "github",
