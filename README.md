@@ -34,9 +34,6 @@ for a in xrange(array.x):
 3. The developer(you) submits a pull request
 4. This bot suggests source code changes based on pattern.
 
-## Contributing
-
-
 ### Setup
 
 ```sh
