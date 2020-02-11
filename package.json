@@ -21,11 +21,11 @@
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
-    "probot": "^9.8.0",
+    "probot": "^9.9.4",
     "request": "^2.88.0",
-    "diff": "4.0.1",
-    "devreplay": "0.3.8",
-    "typescript": "^3.7.4"
+    "diff": "4.0.2",
+    "devreplay": "1.2.0",
+    "typescript": "^3.7.5"
   },
   "devDependencies": {
     "@types/diff": "4.0.2",
