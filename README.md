@@ -1,6 +1,6 @@
 # DevReplay
 
-DevReplay suggests code fix ways that already fixed by human reviewers in past.
+Devreplay suggests code fix ways that already fixed by human reviewers in past.
 
 ![screeenshot](https://raw.githubusercontent.com/devreplay/github-app-devreplay/master/img/Screenshot.png)
 

@@ -1,4 +1,4 @@
-import { fixWithPattern, ILintOut, IPattern, lintWithPattern } from "devreplay";
+import { fixWithPattern, ILintOut, IPattern, lintWithPattern } from "Devreplay";
 import { diffLines } from "diff";
 import { readFileSync } from "fs";
 import { Application, Context } from "probot";
